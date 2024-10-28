@@ -1,0 +1,8 @@
+i PLL1.CLKOP_i
+m 0 0
+u 1 64
+n ckid0_0 {t:ncoGen.phase_accum[63:0].C} Black box on clock path
+p {t:PLL1.PLLInst_0.CLKOP}{t:PLL1.CLKOP_inferred_clock.I[0]}{t:PLL1.CLKOP_inferred_clock.OUT[0]}{p:PLL1.CLKOP}{t:PLL1.CLKOP}{t:ncoGen.clk}{p:ncoGen.clk}{t:ncoGen.phase_accum[63:0].C}
+e ckid0_0 {t:ncoGen.phase_accum[63:0].C} dff
+d ckid0_0 {t:PLL1.PLLInst_0.CLKOP} EHXPLLJ Black box on clock path
+l 0 0 0 0 0

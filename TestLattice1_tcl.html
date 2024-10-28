@@ -1,0 +1,177 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn240929201351"></A><B><U><big>pn240929201351</big></U></B>
+#Start recording tcl command: 9/29/2024 19:57:01
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project new -name "TestLattice1" -impl "ImplTest1" -dev LCMXO2-7000HE-5TG144C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/alberto/Lattice/nco.v"
+prj_project save
+prj_project close
+#Stop recording: 9/29/2024 20:13:51
+
+
+
+<A name="pn241003221509"></A><B><U><big>pn241003221509</big></U></B>
+#Start recording tcl command: 10/3/2024 22:12:52
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+#Stop recording: 10/3/2024 22:15:09
+
+
+
+<A name="pn241004214322"></A><B><U><big>pn241004214322</big></U></B>
+#Start recording tcl command: 10/4/2024 21:43:05
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_project close
+#Stop recording: 10/4/2024 21:43:22
+
+
+
+<A name="pn241004214331"></A><B><U><big>pn241004214331</big></U></B>
+#Start recording tcl command: 10/4/2024 21:43:25
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_project close
+#Stop recording: 10/4/2024 21:43:31
+
+
+
+<A name="pn241004225931"></A><B><U><big>pn241004225931</big></U></B>
+#Start recording tcl command: 10/4/2024 21:43:41
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_src add "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/clockDivider.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/count4.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/count8.vhd" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/LEDtest.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/testbench.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/topcount.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/typepackage.vhd"
+prj_src remove "C:/Users/alberto/Lattice/nco.v"
+prj_src add -exclude "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/pin_assignments.lpf"
+prj_src enable "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/pin_assignments.lpf"
+prj_src syn_sim -src "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/testbench.v" SimulateOnly
+prj_src add "C:/Users/alberto/Lattice/my_pll.v"
+prj_src add "C:/Users/alberto/Lattice/ImplTest1/my_pll.ipx"
+prj_src exclude "C:/Users/alberto/Lattice/my_pll.v"
+prj_src remove "C:/Users/alberto/Lattice/my_pll.v"
+prj_src syn_sim -src "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/testbench.v" SynthesisAndSimulate
+prj_src add "C:/Users/alberto/Lattice/ImplTest1/simulationfile/simulationfile.spf"
+#Stop recording: 10/4/2024 22:59:31
+
+
+
+<A name="pn241006230416"></A><B><U><big>pn241006230416</big></U></B>
+#Start recording tcl command: 10/6/2024 18:47:51
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+C:/Users/alberto/1bitSDR-master
+FPGASDR
+#Start recording tcl command: 10/6/2024 23:04:13
+#Project Location: C:/Users/alberto/1bitSDR-master; Project name: FPGASDR
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_src remove "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/clockDivider.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/count4.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/count8.vhd" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/LEDtest.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/testbench.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/topcount.v" "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/typepackage.vhd" "C:/Users/alberto/Lattice/ImplTest1/my_pll.ipx"
+prj_src enable "C:/Users/alberto/Lattice/TestLattice1.lpf"
+prj_src remove "C:/lscc/diamond/3.11_x64/docs/tutorial/Diamond_tutorial/pin_assignments.lpf"
+prj_src add "C:/Users/alberto/Downloads/blinking_led.v"
+prj_run Synthesis -impl ImplTest1 -task Lattice_Synthesis
+prj_run Export -impl ImplTest1 -task Jedecgen
+pgr_project save "C:/Users/alberto/Lattice/ImplTest1/ImplTest1.xcf"
+prj_src add -exclude "C:/Users/alberto/Lattice/ImplTest1/ImplTest1.xcf"
+prj_src enable "C:/Users/alberto/Lattice/ImplTest1/ImplTest1.xcf"
+pgr_program run
+pgr_program set -cable USB
+pgr_program set -port EzUSB-0
+pgr_program run
+pgr_program run
+pgr_program set -cable USB2
+pgr_program set -port FTUSB-0
+pgr_program run
+pgr_program set -port FTUSB-1
+pgr_program run
+pgr_project save "C:/Users/alberto/Lattice/ImplTest1/ImplTest1.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/Users/alberto/1bitSDR-master/FPGASDR.ldf"
+#Stop recording: 10/6/2024 23:04:16
+
+
+
+<A name="pn241006232611"></A><B><U><big>pn241006232611</big></U></B>
+#Start recording tcl command: 10/6/2024 23:06:05
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_run PAR -impl ImplTest1
+prj_run Map -impl ImplTest1
+prj_run Map -impl ImplTest1
+prj_project save
+prj_project close
+#Stop recording: 10/6/2024 23:26:11
+
+
+
+<A name="pn241006233057"></A><B><U><big>pn241006233057</big></U></B>
+#Start recording tcl command: 10/6/2024 23:29:01
+#Project Location: C:/Users/alberto/Lattice; Project name: TestLattice1
+prj_project open "C:/Users/alberto/Lattice/TestLattice1.ldf"
+prj_run PAR -impl ImplTest1 -task PARTrace
+prj_project save
+prj_project close
+#Stop recording: 10/6/2024 23:30:57
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

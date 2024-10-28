@@ -1,0 +1,8 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, top, 0h:00m:00s,     71 MB
+work, PLL_TX, 0h:00m:00s,     71 MB
+work, PLL, 0h:00m:00s,     71 MB
+work, EHXPLLJ, 0h:00m:00s,     71 MB
+work, VLO, 0h:00m:00s,     71 MB
+work, nco_sig, 0h:00m:00s,     72 MB
+work, PUR, 0h:00m:00s,     72 MB

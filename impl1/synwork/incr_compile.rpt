@@ -1,0 +1,44 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: C:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-LI6GKLP
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 10
+FID:  path (timestamp)
+9        C:\Users\alberto\Lattice\testNCO\PLL.v (2024-10-27 17:48:11)
+12       C:\Users\alberto\Lattice\testNCO\PLL_TX.v (2024-10-28 17:03:13)
+10       C:\Users\alberto\Lattice\testNCO\impl1\source\NCO.v (2024-10-27 15:36:28)
+11       C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 17:33:35)
+2        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v (2019-04-01 10:08:08)
+3        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v (2019-04-01 10:08:08)
+4        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\hypermods.v (2019-04-01 10:07:44)
+5        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_objects.v (2019-04-01 10:07:44)
+6        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_pipes.svh (2019-04-01 10:07:44)
+7        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\umr_capim.v (2019-04-01 10:07:44)
+
+*******************************************************************
+Unchanged modules: 4
+MID:  lib.cell.view
+2        work.PLL.verilog
+3        work.PLL_TX.verilog
+0        work.nco_sig.verilog
+1        work.top.verilog

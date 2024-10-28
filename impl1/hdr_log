@@ -1,0 +1,215 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Oct 28 09:04:54 2024
+
+
+Command Line:  synthesis -f testNCO_impl1_lattice.synproj -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = top.
+Target frequency = 100.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/alberto/Lattice/testNCO (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/alberto/Lattice/testNCO/impl1 (searchpath added)
+-p C:/Users/alberto/Lattice/testNCO (searchpath added)
+Verilog design file = C:/Users/alberto/Lattice/testNCO/impl1/source/NCO.v
+Verilog design file = C:/Users/alberto/Lattice/testNCO/impl1/source/top.v
+Verilog design file = C:/Users/alberto/Lattice/testNCO/PLL_TX.v
+NGD file = testNCO_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/nco.v. VERI-1482
+Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/top.v. VERI-1482
+Analyzing Verilog file c:/users/alberto/lattice/testnco/pll_tx.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+INFO - synthesis: c:/users/alberto/lattice/testnco/impl1/source/top.v(14): compiling module top. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1032): compiling module PUR. VERI-1018
+INFO - synthesis: c:/users/alberto/lattice/testnco/impl1/source/nco.v(13): compiling module nco_sig. VERI-1018
+WARNING - synthesis: c:/users/alberto/lattice/testnco/impl1/source/top.v(57): instantiating unknown module PLL. VERI-1063
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = top.
+WARNING - synthesis: Bit 7 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 6 of Register phase_inc_carrGen is stuck at One
+WARNING - synthesis: Bit 5 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 4 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 3 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 2 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 1 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 0 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 55 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 54 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 53 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 52 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 51 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 50 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 49 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 48 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 47 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 46 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 45 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 44 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 43 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 42 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 41 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 40 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 39 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 38 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 37 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 36 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 35 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 34 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 33 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 32 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 31 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 30 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 29 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 28 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 27 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 26 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 25 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 24 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 23 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 22 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 21 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 20 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 19 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 18 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 17 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 16 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 15 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 14 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 13 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 12 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 11 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 10 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 9 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 8 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 7 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 6 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 5 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 4 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 3 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 2 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 1 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 0 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 63 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register phase_inc_carrGen1 is stuck at One
+WARNING - synthesis: Bit 61 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 60 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 59 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 58 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 57 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 56 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 55 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 54 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 53 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 52 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 51 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 50 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 49 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 

@@ -1,0 +1,2 @@
+@E: CS187 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":65:1:65:5|Expecting )
+

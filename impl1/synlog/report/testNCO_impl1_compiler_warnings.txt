@@ -1,0 +1,3 @@
+@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

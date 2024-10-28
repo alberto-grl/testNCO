@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/28/2024 18:35:56
+#Project Location: C:/Users/alberto/Lattice/testNCO; Project name: testNCO
+prj_project open "C:/Users/alberto/Lattice/testNCO/testNCO.ldf"
+prj_project close
+#Stop recording: 10/28/2024 18:36:01

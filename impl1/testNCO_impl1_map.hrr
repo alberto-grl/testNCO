@@ -1,0 +1,33 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.00        100.0
+                                  LUT4	       2.00        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	          8        100.0
+                                RIPPLE	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               nco_sig	          1        83.3
+                                PLL_TX	          1         0.0
+                                   PLL	          1         0.0
+---------------------------------------------------
+Report for cell PLL_TX
+   Instance path: top/PLL2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell PLL
+   Instance path: top/PLL1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell nco_sig
+   Instance path: top/ncoGen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00        83.3
+                                PFUREG	          8        100.0
+                                RIPPLE	          5        100.0

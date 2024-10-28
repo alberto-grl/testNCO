@@ -1,0 +1,29 @@
+#Start recording tcl command: 10/27/2024 14:57:57
+#Project Location: C:/Users/alberto/Lattice; Project name: testNCO
+prj_project new -name "testNCO" -impl "impl1" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/alberto/Lattice/FPGARX/NCO.v" "C:/Users/alberto/Lattice/FPGARX/top.v" "C:/Users/alberto/Lattice/impl1/source"
+prj_src add "C:/Users/alberto/Lattice/impl1/source/NCO.v" "C:/Users/alberto/Lattice/impl1/source/top.v"
+prj_project save
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_src add "C:/Users/alberto/Lattice/PLL.ipx"
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1 -forceAll
+prj_run PAR -impl impl1
+prj_run PAR -impl impl1 -forceAll
+prj_src add "C:/Users/alberto/Lattice/sim/sim.spf"
+prj_src add "C:/Users/alberto/Lattice/hhh/hhh.spf"
+#Stop recording: 10/27/2024 16:28:58

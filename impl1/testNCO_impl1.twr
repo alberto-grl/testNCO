@@ -1,0 +1,1199 @@
+
+Loading design for application trce from file testnco_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
+Mon Oct 28 18:37:09 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o testNCO_impl1.twr -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml testNCO_impl1.ncd testNCO_impl1.prf 
+Design file:     testnco_impl1.ncd
+Preference file: testnco_impl1.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "TX_NCO_c" 22.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "TX_c" 22.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 5.099ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[56]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[63]  (to osc_clk +)
+
+   Delay:               3.068ns  (78.6% logic, 21.4% route), 6 logic levels.
+
+ Constraint Details:
+
+      3.068ns physical path delay ncoGen/SLICE_0 to ncoGen/SLICE_1 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.099ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20A.CLK to     R21C20A.Q1 ncoGen/SLICE_0 (from osc_clk)
+ROUTE         1     0.656     R21C20A.Q1 to     R21C20A.A1 ncoGen/phase_accum[56]
+C1TOFCO_DE  ---     0.889     R21C20A.A1 to    R21C20A.FCO ncoGen/SLICE_0
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI ncoGen/phase_accum_1_cry_0
+FCITOFCO_D  ---     0.162    R21C20B.FCI to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOFCO_D  ---     0.162    R21C20D.FCI to    R21C20D.FCO ncoGen/SLICE_2
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI ncoGen/phase_accum_1_cry_6
+FCITOF0_DE  ---     0.585    R21C21A.FCI to     R21C21A.F0 ncoGen/SLICE_1
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 ncoGen/phase_accum_1[63] (to osc_clk)
+                  --------
+                    3.068   (78.6% logic, 21.4% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.127ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[57]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[63]  (to osc_clk +)
+
+   Delay:               3.040ns  (78.4% logic, 21.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.040ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_1 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.127ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20B.CLK to     R21C20B.Q0 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.656     R21C20B.Q0 to     R21C20B.A0 ncoGen/phase_accum[57]
+C0TOFCO_DE  ---     1.023     R21C20B.A0 to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOFCO_D  ---     0.162    R21C20D.FCI to    R21C20D.FCO ncoGen/SLICE_2
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI ncoGen/phase_accum_1_cry_6
+FCITOF0_DE  ---     0.585    R21C21A.FCI to     R21C21A.F0 ncoGen/SLICE_1
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 ncoGen/phase_accum_1[63] (to osc_clk)
+                  --------
+                    3.040   (78.4% logic, 21.6% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.203ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[56]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[62]  (to osc_clk +)
+
+   Delay:               2.964ns  (77.9% logic, 22.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      2.964ns physical path delay ncoGen/SLICE_0 to ncoGen/SLICE_2 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.203ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20A.CLK to     R21C20A.Q1 ncoGen/SLICE_0 (from osc_clk)
+ROUTE         1     0.656     R21C20A.Q1 to     R21C20A.A1 ncoGen/phase_accum[56]
+C1TOFCO_DE  ---     0.889     R21C20A.A1 to    R21C20A.FCO ncoGen/SLICE_0
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI ncoGen/phase_accum_1_cry_0
+FCITOFCO_D  ---     0.162    R21C20B.FCI to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOF1_DE  ---     0.643    R21C20D.FCI to     R21C20D.F1 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 ncoGen/phase_accum_1[62] (to osc_clk)
+                  --------
+                    2.964   (77.9% logic, 22.1% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.231ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[57]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[62]  (to osc_clk +)
+
+   Delay:               2.936ns  (77.7% logic, 22.3% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.936ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_2 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.231ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20B.CLK to     R21C20B.Q0 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.656     R21C20B.Q0 to     R21C20B.A0 ncoGen/phase_accum[57]
+C0TOFCO_DE  ---     1.023     R21C20B.A0 to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOF1_DE  ---     0.643    R21C20D.FCI to     R21C20D.F1 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 ncoGen/phase_accum_1[62] (to osc_clk)
+                  --------
+                    2.936   (77.7% logic, 22.3% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.261ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[58]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[63]  (to osc_clk +)
+
+   Delay:               2.906ns  (77.4% logic, 22.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      2.906ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_1 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.261ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20B.CLK to     R21C20B.Q1 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.656     R21C20B.Q1 to     R21C20B.A1 ncoGen/phase_accum[58]
+C1TOFCO_DE  ---     0.889     R21C20B.A1 to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOFCO_D  ---     0.162    R21C20D.FCI to    R21C20D.FCO ncoGen/SLICE_2
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI ncoGen/phase_accum_1_cry_6
+FCITOF0_DE  ---     0.585    R21C21A.FCI to     R21C21A.F0 ncoGen/SLICE_1
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 ncoGen/phase_accum_1[63] (to osc_clk)
+                  --------
+                    2.906   (77.4% logic, 22.6% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.261ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[56]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[61]  (to osc_clk +)
+
+   Delay:               2.906ns  (77.4% logic, 22.6% route), 5 logic levels.
+
+ Constraint Details:
+
+      2.906ns physical path delay ncoGen/SLICE_0 to ncoGen/SLICE_2 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.261ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20A.CLK to     R21C20A.Q1 ncoGen/SLICE_0 (from osc_clk)
+ROUTE         1     0.656     R21C20A.Q1 to     R21C20A.A1 ncoGen/phase_accum[56]
+C1TOFCO_DE  ---     0.889     R21C20A.A1 to    R21C20A.FCO ncoGen/SLICE_0
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI ncoGen/phase_accum_1_cry_0
+FCITOFCO_D  ---     0.162    R21C20B.FCI to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOF0_DE  ---     0.585    R21C20D.FCI to     R21C20D.F0 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 ncoGen/phase_accum_1[61] (to osc_clk)
+                  --------
+                    2.906   (77.4% logic, 22.6% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[59]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[63]  (to osc_clk +)
+
+   Delay:               2.878ns  (77.2% logic, 22.8% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.878ns physical path delay ncoGen/SLICE_3 to ncoGen/SLICE_1 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.289ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_3 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20C.CLK to     R21C20C.Q0 ncoGen/SLICE_3 (from osc_clk)
+ROUTE         1     0.656     R21C20C.Q0 to     R21C20C.A0 ncoGen/phase_accum[59]
+C0TOFCO_DE  ---     1.023     R21C20C.A0 to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOFCO_D  ---     0.162    R21C20D.FCI to    R21C20D.FCO ncoGen/SLICE_2
+ROUTE         1     0.000    R21C20D.FCO to    R21C21A.FCI ncoGen/phase_accum_1_cry_6
+FCITOF0_DE  ---     0.585    R21C21A.FCI to     R21C21A.F0 ncoGen/SLICE_1
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 ncoGen/phase_accum_1[63] (to osc_clk)
+                  --------
+                    2.878   (77.2% logic, 22.8% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[57]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[61]  (to osc_clk +)
+
+   Delay:               2.878ns  (77.2% logic, 22.8% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.878ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_2 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.289ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20B.CLK to     R21C20B.Q0 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.656     R21C20B.Q0 to     R21C20B.A0 ncoGen/phase_accum[57]
+C0TOFCO_DE  ---     1.023     R21C20B.A0 to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOF0_DE  ---     0.585    R21C20D.FCI to     R21C20D.F0 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 ncoGen/phase_accum_1[61] (to osc_clk)
+                  --------
+                    2.878   (77.2% logic, 22.8% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.365ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[58]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[62]  (to osc_clk +)
+
+   Delay:               2.802ns  (76.6% logic, 23.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.802ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_2 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.365ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20B.CLK to     R21C20B.Q1 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.656     R21C20B.Q1 to     R21C20B.A1 ncoGen/phase_accum[58]
+C1TOFCO_DE  ---     0.889     R21C20B.A1 to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOFCO_D  ---     0.162    R21C20C.FCI to    R21C20C.FCO ncoGen/SLICE_3
+ROUTE         1     0.000    R21C20C.FCO to    R21C20D.FCI ncoGen/phase_accum_1_cry_4
+FCITOF1_DE  ---     0.643    R21C20D.FCI to     R21C20D.F1 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 ncoGen/phase_accum_1[62] (to osc_clk)
+                  --------
+                    2.802   (76.6% logic, 23.4% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 5.365ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[56]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[60]  (to osc_clk +)
+
+   Delay:               2.802ns  (76.6% logic, 23.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.802ns physical path delay ncoGen/SLICE_0 to ncoGen/SLICE_3 meets
+      8.333ns delay constraint less
+      0.000ns skew and
+      0.166ns DIN_SET requirement (totaling 8.167ns) by 5.365ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R21C20A.CLK to     R21C20A.Q1 ncoGen/SLICE_0 (from osc_clk)
+ROUTE         1     0.656     R21C20A.Q1 to     R21C20A.A1 ncoGen/phase_accum[56]
+C1TOFCO_DE  ---     0.889     R21C20A.A1 to    R21C20A.FCO ncoGen/SLICE_0
+ROUTE         1     0.000    R21C20A.FCO to    R21C20B.FCI ncoGen/phase_accum_1_cry_0
+FCITOFCO_D  ---     0.162    R21C20B.FCI to    R21C20B.FCO ncoGen/SLICE_4
+ROUTE         1     0.000    R21C20B.FCO to    R21C20C.FCI ncoGen/phase_accum_1_cry_2
+FCITOF1_DE  ---     0.643    R21C20C.FCI to     R21C20C.F1 ncoGen/SLICE_3
+ROUTE         1     0.000     R21C20C.F1 to    R21C20C.DI1 ncoGen/phase_accum_1[60] (to osc_clk)
+                  --------
+                    2.802   (76.6% logic, 23.4% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     1.843     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    1.843   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  309.215MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY PORT "XIn" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 118.340ns
+         The internal maximum frequency of the following component is 150.150 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    PIO        PAD            XIn
+
+   Delay:               6.660ns -- based on Minimum Pulse Width
+
+Report:  150.150MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "TX_NCO_c" 22.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "TX_c" 22.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "osc_clk" 120.000000 MHz  |             |             |
+;                                       |  120.000 MHz|  309.215 MHz|   6  
+                                        |             |             |
+FREQUENCY PORT "XIn" 8.000000 MHz ;     |    8.000 MHz|  150.150 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 6
+   Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: TX_c   Source: PLL2/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: TX_NCO_c   Source: ncoGen/SLICE_1.Q0   Loads: 3
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 36 paths, 5 nets, and 37 connections (94.87% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
+Mon Oct 28 18:37:09 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o testNCO_impl1.twr -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml testNCO_impl1.ncd testNCO_impl1.prf 
+Design file:     testnco_impl1.ncd
+Preference file: testnco_impl1.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "TX_NCO_c" 22.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "TX_c" 22.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[59]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[59]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_3 to ncoGen/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_3 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20C.CLK to     R21C20C.Q0 ncoGen/SLICE_3 (from osc_clk)
+ROUTE         1     0.130     R21C20C.Q0 to     R21C20C.A0 ncoGen/phase_accum[59]
+CTOF_DEL    ---     0.101     R21C20C.A0 to     R21C20C.F0 ncoGen/SLICE_3
+ROUTE         1     0.000     R21C20C.F0 to    R21C20C.DI0 ncoGen/phase_accum_1[59] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[62]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[62]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_2 to ncoGen/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_2 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20D.CLK to     R21C20D.Q1 ncoGen/SLICE_2 (from osc_clk)
+ROUTE         1     0.130     R21C20D.Q1 to     R21C20D.A1 ncoGen/phase_accum[62]
+CTOF_DEL    ---     0.101     R21C20D.A1 to     R21C20D.F1 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 ncoGen/phase_accum_1[62] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[58]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[58]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20B.CLK to     R21C20B.Q1 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.130     R21C20B.Q1 to     R21C20B.A1 ncoGen/phase_accum[58]
+CTOF_DEL    ---     0.101     R21C20B.A1 to     R21C20B.F1 ncoGen/SLICE_4
+ROUTE         1     0.000     R21C20B.F1 to    R21C20B.DI1 ncoGen/phase_accum_1[58] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[61]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[61]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_2 to ncoGen/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_2 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20D.CLK to     R21C20D.Q0 ncoGen/SLICE_2 (from osc_clk)
+ROUTE         1     0.130     R21C20D.Q0 to     R21C20D.A0 ncoGen/phase_accum[61]
+CTOF_DEL    ---     0.101     R21C20D.A0 to     R21C20D.F0 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F0 to    R21C20D.DI0 ncoGen/phase_accum_1[61] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[56]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[56]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_0 to ncoGen/SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20A.CLK to     R21C20A.Q1 ncoGen/SLICE_0 (from osc_clk)
+ROUTE         1     0.130     R21C20A.Q1 to     R21C20A.A1 ncoGen/phase_accum[56]
+CTOF_DEL    ---     0.101     R21C20A.A1 to     R21C20A.F1 ncoGen/SLICE_0
+ROUTE         1     0.000     R21C20A.F1 to    R21C20A.DI1 ncoGen/phase_accum_i[56] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20A.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[60]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[60]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_3 to ncoGen/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_3 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20C.CLK to     R21C20C.Q1 ncoGen/SLICE_3 (from osc_clk)
+ROUTE         1     0.130     R21C20C.Q1 to     R21C20C.A1 ncoGen/phase_accum[60]
+CTOF_DEL    ---     0.101     R21C20C.A1 to     R21C20C.F1 ncoGen/SLICE_3
+ROUTE         1     0.000     R21C20C.F1 to    R21C20C.DI1 ncoGen/phase_accum_1[60] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.377ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[57]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[57]  (to osc_clk +)
+
+   Delay:               0.364ns  (64.3% logic, 35.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.364ns physical path delay ncoGen/SLICE_4 to ncoGen/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.377ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_4 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20B.CLK to     R21C20B.Q0 ncoGen/SLICE_4 (from osc_clk)
+ROUTE         1     0.130     R21C20B.Q0 to     R21C20B.A0 ncoGen/phase_accum[57]
+CTOF_DEL    ---     0.101     R21C20B.A0 to     R21C20B.F0 ncoGen/SLICE_4
+ROUTE         1     0.000     R21C20B.F0 to    R21C20B.DI0 ncoGen/phase_accum_1[57] (to osc_clk)
+                  --------
+                    0.364   (64.3% logic, 35.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20B.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[63]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[63]  (to osc_clk +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay ncoGen/SLICE_1 to ncoGen/SLICE_1 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_1 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C21A.CLK to     R21C21A.Q0 ncoGen/SLICE_1 (from osc_clk)
+ROUTE         3     0.132     R21C21A.Q0 to     R21C21A.A0 TX_NCO_c
+CTOF_DEL    ---     0.101     R21C21A.A0 to     R21C21A.F0 ncoGen/SLICE_1
+ROUTE         1     0.000     R21C21A.F0 to    R21C21A.DI0 ncoGen/phase_accum_1[63] (to osc_clk)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C21A.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.501ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[59]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[60]  (to osc_clk +)
+
+   Delay:               0.488ns  (73.4% logic, 26.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.488ns physical path delay ncoGen/SLICE_3 to ncoGen/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.501ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_3 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20C.CLK to     R21C20C.Q0 ncoGen/SLICE_3 (from osc_clk)
+ROUTE         1     0.130     R21C20C.Q0 to     R21C20C.A0 ncoGen/phase_accum[59]
+CTOF1_DEL   ---     0.225     R21C20C.A0 to     R21C20C.F1 ncoGen/SLICE_3
+ROUTE         1     0.000     R21C20C.F1 to    R21C20C.DI1 ncoGen/phase_accum_1[60] (to osc_clk)
+                  --------
+                    0.488   (73.4% logic, 26.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20C.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.501ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum[61]  (from osc_clk +)
+   Destination:    FF         Data in        ncoGen/phase_accum[62]  (to osc_clk +)
+
+   Delay:               0.488ns  (73.4% logic, 26.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.488ns physical path delay ncoGen/SLICE_2 to ncoGen/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.501ns
+
+ Physical Path Details:
+
+      Data path ncoGen/SLICE_2 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C20D.CLK to     R21C20D.Q0 ncoGen/SLICE_2 (from osc_clk)
+ROUTE         1     0.130     R21C20D.Q0 to     R21C20D.A0 ncoGen/phase_accum[61]
+CTOF1_DEL   ---     0.225     R21C20D.A0 to     R21C20D.F1 ncoGen/SLICE_2
+ROUTE         1     0.000     R21C20D.F1 to    R21C20D.DI1 ncoGen/phase_accum_1[62] (to osc_clk)
+                  --------
+                    0.488   (73.4% logic, 26.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path PLL1/PLLInst_0 to ncoGen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         6     0.680     LPLL.CLKOP to    R21C20D.CLK osc_clk
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY PORT "XIn" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "TX_NCO_c" 22.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "TX_c" 22.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "osc_clk" 120.000000 MHz  |             |             |
+;                                       |     0.000 ns|     0.377 ns|   2  
+                                        |             |             |
+FREQUENCY PORT "XIn" 8.000000 MHz ;     |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 6
+   Covered under: FREQUENCY NET "osc_clk" 120.000000 MHz ;
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: TX_c   Source: PLL2/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: TX_NCO_c   Source: ncoGen/SLICE_1.Q0   Loads: 3
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 36 paths, 5 nets, and 37 connections (94.87% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

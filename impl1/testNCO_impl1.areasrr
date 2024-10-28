@@ -1,0 +1,52 @@
+----------------------------------------------------------------------
+Report for cell top.verilog
+
+Register bits: 8 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       11
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        5       100.0
+                            EHXPLLJ        2       100.0
+                            FD1S3AX        8       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                                 OB       10       100.0
+                                PUR        1       100.0
+                                VHI        2       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                                PLL        1       100.0
+                             PLL_TX        1       100.0
+                            nco_sig        1       100.0
+                            
+                         TOTAL            37           
+----------------------------------------------------------------------
+Report for cell PLL_TX.netlist
+     Instance path:  PLL2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLJ        1        50.0
+                                VLO        1        25.0
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell PLL.netlist
+     Instance path:  PLL1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLJ        1        50.0
+                                VLO        1        25.0
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell nco_sig.netlist
+     Instance path:  ncoGen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        5       100.0
+                            FD1S3AX        8       100.0
+                                VHI        1        50.0
+                                VLO        1        25.0
+                            
+                         TOTAL            15           

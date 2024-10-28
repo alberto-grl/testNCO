@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="TestLattice1" device="LCMXO2-7000HE-5TG144C" default_implementation="ImplTest1">
+    <Options/>
+    <Implementation title="ImplTest1" dir="ImplTest1" description="ImplTest1" synthesis="lse" default_strategy="Strategy1">
+        <Options/>
+        <Source name="../Downloads/blinking_led.v" type="Verilog" type_short="Verilog">
+            <Options top_module="blinking_led"/>
+        </Source>
+        <Source name="NCO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ImplTest1/ImplTest1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="ImplTest1/simulationfile/simulationfile.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="TestLattice1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="TestLattice11.sty"/>
+</BaliProject>
