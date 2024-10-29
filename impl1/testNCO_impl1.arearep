@@ -1,29 +1,32 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  27 of 7209 (0.375%)
-I/O cells:      22
+Register bits:  111 of 7209 (1.540%)
+I/O cells:      41
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               AND2         1          100.0
+                               AND2         6          100.0
                               DP8KC         2          100.0
                             EHXPLLJ         2          100.0
-                             FADD2B        11          100.0
-                            FD1P3DX        22          100.0
+                             FADD2B        53          100.0
+                            FD1P3DX       106          100.0
                             FD1S3AX         5          100.0
                                 GSR         1          100.0
-                                 IB         1          100.0
+                                 IB        11          100.0
                                 INV        20          100.0
                                LUT4         6          100.0
+                              MULT2        25          100.0
                               MUX21        36          100.0
-                                 OB        21          100.0
+                                ND2        18          100.0
+                                 OB        30          100.0
                                 PUR         1          100.0
                            ROM16X1A         3          100.0
 SUB MODULES
+                         Multiplier         1
                                 PLL         1
                              PLL_TX         1
                              SinCos         1
                             nco_sig         1
-                              TOTAL       136
+                              TOTAL       330
 ----------------------------------------------------------------------
 Report for cell nco_sig.v1
 Instance Path : ncoGen
@@ -32,6 +35,17 @@ Instance Path : ncoGen
                             FD1S3AX         4           80.0
                                LUT4         4           66.7
                               TOTAL         8
+----------------------------------------------------------------------
+Report for cell Multiplier.v1
+Instance Path : MixerI
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         5           83.3
+                             FADD2B        42           79.2
+                            FD1P3DX        84           79.2
+                              MULT2        25          100.0
+                                ND2        18          100.0
+                              TOTAL       174
 ----------------------------------------------------------------------
 Report for cell PLL.v1
 Instance Path : PLL1
@@ -51,10 +65,10 @@ Report for cell SinCos.v1
 Instance Path : SinCos1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               AND2         1          100.0
+                               AND2         1           16.7
                               DP8KC         2          100.0
-                             FADD2B        11          100.0
-                            FD1P3DX        22          100.0
+                             FADD2B        11           20.8
+                            FD1P3DX        22           20.8
                                 INV        20          100.0
                               MUX21        36          100.0
                            ROM16X1A         3          100.0

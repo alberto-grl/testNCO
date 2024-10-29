@@ -7,46 +7,416 @@ SinCos1/rom_addr0_r_4_inv SinCos1/rom_addr0_r_4
 SinCos1/rom_addr0_r_5_inv SinCos1/rom_addr0_r_5
 SinCos1/rom_addr0_r_6_inv SinCos1/rom_addr0_r_6
 SinCos1/rom_addr0_r_7_inv SinCos1/rom_addr0_r_7
-SinCos1/rom_dob_inv SinCos1/rom_dob
-SinCos1/rom_dob_1_inv SinCos1/rom_dob_1
-SinCos1/rom_dob_2_inv SinCos1/rom_dob_2
-SinCos1/rom_dob_3_inv SinCos1/rom_dob_3
-SinCos1/rom_dob_4_inv SinCos1/rom_dob_4
-SinCos1/rom_dob_5_inv SinCos1/rom_dob_5
-SinCos1/rom_dob_6_inv SinCos1/rom_dob_6
-SinCos1/rom_dob_7_inv SinCos1/rom_dob_7
-SinCos1/rom_dob_8_inv SinCos1/rom_dob_8
-SinCos1/rom_dob_9_inv SinCos1/rom_dob_9
-SinCos1/lx_ne0_inv SinCos1/lx_ne0
-SinCos1/mx_ctrl_r_inv SinCos1/mx_ctrl_r
 [ END MERGED ]
 [ START CLIPPED ]
-n574
+SinCos1/mx_ctrl_r_inv
+SinCos1/lx_ne0_inv
+SinCos1/sinout_pre
+SinCos1/rom_dob_19
+SinCos1/rom_dob_18
+SinCos1/rom_dob_17
+SinCos1/rom_dob_16
+SinCos1/rom_dob_15
+SinCos1/rom_dob_14
+SinCos1/rom_dob_13
+SinCos1/rom_dob_12
+SinCos1/rom_dob_11
+SinCos1/rom_dob_9
+SinCos1/rom_dob_8
+SinCos1/rom_dob_7
+SinCos1/rom_dob_6
+SinCos1/rom_dob_5
+SinCos1/rom_dob_4
+SinCos1/rom_dob_3
+SinCos1/rom_dob_2
+SinCos1/rom_dob_1
+SinCos1/lx_ne0
+SinCos1/func_or_inet_1
+SinCos1/func_or_inet
+SinCos1/rom_dob_n_9
+SinCos1/rom_dob_9_inv
+SinCos1/rom_dob_n_8
+SinCos1/rom_dob_n_7
+SinCos1/co4_1
+SinCos1/rom_dob_8_inv
+SinCos1/rom_dob_7_inv
+SinCos1/rom_dob_n_6
+SinCos1/rom_dob_n_5
+SinCos1/co3_2
+SinCos1/rom_dob_6_inv
+SinCos1/rom_dob_5_inv
+SinCos1/rom_dob_n_4
+SinCos1/rom_dob_n_3
+SinCos1/co2_2
+SinCos1/rom_dob_4_inv
+SinCos1/rom_dob_3_inv
+SinCos1/rom_dob_n_2
+SinCos1/rom_dob_n_1
+SinCos1/co1_2
+SinCos1/rom_dob_2_inv
+SinCos1/rom_dob_1_inv
+SinCos1/co0_2
+SinCos1/rom_dob_inv
+SinCos1/sinout_pre_9
+SinCos1/sinout_pre_8
+SinCos1/sinout_pre_7
+SinCos1/sinout_pre_6
+SinCos1/sinout_pre_5
+SinCos1/sinout_pre_4
+SinCos1/sinout_pre_3
+SinCos1/sinout_pre_2
+SinCos1/sinout_pre_1
+SinCos1/sinout_sel
+SinCos1/sinout_sel_i
+SinCos1/rom_dob_10
+SinCos1/rom_dob_n
+SinCos1/rom_dob
+SinCos1/sinromoutsel
+SinCos1/mx_ctrl_r_1
+RFIn[0]
+RFIn[9]
+RFIn[8]
+RFIn[6]
+RFIn[5]
+RFIn[4]
+RFIn[3]
+RFIn[2]
+RFIn[1]
+MixerI/Multiplier_0_mult_8_4_n2
+MixerI/Multiplier_0_mult_8_4_n0
+MixerI/mco_19
+MixerI/Multiplier_0_mult_8_3_n1
+MixerI/Multiplier_0_mult_8_3_n0
+MixerI/mco_18
+MixerI/Multiplier_0_mult_8_2_n1
+MixerI/Multiplier_0_mult_8_2_n0
+MixerI/mco_17
+MixerI/Multiplier_0_mult_8_1_n1
+MixerI/Multiplier_0_mult_8_1_n0
+MixerI/mco_16
+MixerI/Multiplier_0_mult_8_0_n1
+MixerI/Multiplier_0_mult_8_0_n0
+MixerI/Multiplier_0_mult_6_4_n1
+MixerI/Multiplier_0_mult_6_4_n2
+MixerI/mco_15
+MixerI/mco_14
+MixerI/mco_13
+MixerI/mco_12
+MixerI/Multiplier_0_mult_4_4_n1
+MixerI/Multiplier_0_mult_4_4_n2
+MixerI/mco_11
+MixerI/mco_10
+MixerI/mco_9
+MixerI/mco_8
+MixerI/Multiplier_0_mult_2_4_n1
+MixerI/Multiplier_0_mult_2_4_n2
+MixerI/mco_7
+MixerI/mco_6
+MixerI/mco_5
+MixerI/mco_4
+MixerI/Multiplier_0_mult_0_4_n1
+MixerI/Multiplier_0_mult_0_4_n2
+MixerI/mco_3
+MixerI/mco_2
+MixerI/mco_1
+MixerI/mco
+MixerI/co_t_Multiplier_0_3_6
+MixerI/co_t_Multiplier_0_3_5
+MixerI/co_t_Multiplier_0_3_4
+MixerI/co_t_Multiplier_0_3_3
+MixerI/co_t_Multiplier_0_3_2
+MixerI/co_t_Multiplier_0_3_1
+MixerI/s_Multiplier_0_2_19
+MixerI/s_Multiplier_0_2_18
+MixerI/s_Multiplier_0_2_17
+MixerI/co_Multiplier_0_2_8
+MixerI/s_Multiplier_0_2_16
+MixerI/s_Multiplier_0_2_15
+MixerI/co_Multiplier_0_2_7
+MixerI/s_Multiplier_0_2_14
+MixerI/s_Multiplier_0_2_13
+MixerI/co_Multiplier_0_2_6
+MixerI/s_Multiplier_0_2_12
+MixerI/s_Multiplier_0_2_11
+MixerI/co_Multiplier_0_2_5
+MixerI/s_Multiplier_0_2_10
+MixerI/s_Multiplier_0_2_9
+MixerI/co_Multiplier_0_2_4
+MixerI/s_Multiplier_0_2_8
+MixerI/co_Multiplier_0_2_3
+MixerI/co_Multiplier_0_2_2
+MixerI/co_Multiplier_0_2_1
+MixerI/co_Multiplier_0_1_7
+MixerI/co_Multiplier_0_1_6
+MixerI/Multiplier_0_pp_3_16
+MixerI/Multiplier_0_pp_3_15
+MixerI/co_Multiplier_0_1_5
+MixerI/Multiplier_0_pp_3_14
+MixerI/Multiplier_0_pp_3_13
+MixerI/Multiplier_0_pp_2_14
+MixerI/Multiplier_0_pp_2_13
+MixerI/co_Multiplier_0_1_4
+MixerI/Multiplier_0_pp_3_12
+MixerI/Multiplier_0_pp_3_11
+MixerI/Multiplier_0_pp_2_12
+MixerI/Multiplier_0_pp_2_11
+MixerI/co_Multiplier_0_1_3
+MixerI/Multiplier_0_pp_3_10
+MixerI/Multiplier_0_pp_3_9
+MixerI/Multiplier_0_pp_2_10
+MixerI/Multiplier_0_pp_2_9
+MixerI/co_Multiplier_0_1_2
+MixerI/Multiplier_0_pp_3_8
+MixerI/Multiplier_0_pp_3_7
+MixerI/Multiplier_0_pp_2_8
+MixerI/Multiplier_0_pp_2_7
+MixerI/co_Multiplier_0_1_1
+MixerI/Multiplier_0_pp_2_6
+MixerI/co_Multiplier_0_0_7
+MixerI/co_Multiplier_0_0_6
+MixerI/Multiplier_0_pp_1_12
+MixerI/Multiplier_0_pp_1_11
+MixerI/co_Multiplier_0_0_5
+MixerI/Multiplier_0_pp_1_10
+MixerI/Multiplier_0_pp_1_9
+MixerI/Multiplier_0_pp_0_10
+MixerI/Multiplier_0_pp_0_9
+MixerI/co_Multiplier_0_0_4
+MixerI/Multiplier_0_pp_1_8
+MixerI/Multiplier_0_pp_1_7
+MixerI/Multiplier_0_pp_0_8
+MixerI/Multiplier_0_pp_0_7
+MixerI/co_Multiplier_0_0_3
+MixerI/Multiplier_0_pp_1_6
+MixerI/Multiplier_0_pp_1_5
+MixerI/Multiplier_0_pp_0_6
+MixerI/Multiplier_0_pp_0_5
+MixerI/co_Multiplier_0_0_2
+MixerI/Multiplier_0_pp_1_4
+MixerI/Multiplier_0_pp_1_3
+MixerI/Multiplier_0_pp_0_4
+MixerI/Multiplier_0_pp_0_3
+MixerI/co_Multiplier_0_0_1
+MixerI/Multiplier_0_pp_0_2
+MixerI/mfco_4
+MixerI/Multiplier_0_cin_lr_8
+MixerI/Multiplier_0_pp_3_17
+MixerI/mfco_3
+MixerI/Multiplier_0_cin_lr_6
+MixerI/Multiplier_0_pp_2_15
+MixerI/mfco_2
+MixerI/Multiplier_0_cin_lr_4
+MixerI/Multiplier_0_pp_1_13
+MixerI/mfco_1
+MixerI/Multiplier_0_cin_lr_2
+MixerI/Multiplier_0_pp_0_11
+MixerI/mfco
+MixerI/Multiplier_0_cin_lr_0
+MixerI/Multiplier_0_pp_4_19
+MixerI/Multiplier_0_pp_4_18
+MixerI/Multiplier_0_pp_4_17
+MixerI/Multiplier_0_pp_4_16
+MixerI/Multiplier_0_pp_4_15
+MixerI/Multiplier_0_pp_4_14
+MixerI/Multiplier_0_pp_4_13
+MixerI/Multiplier_0_pp_4_12
+MixerI/Multiplier_0_pp_4_11
+MixerI/Multiplier_0_pp_4_10
+MixerI/Multiplier_0_pp_4_9
+MixerI/s_Multiplier_0_1_19
+MixerI/s_Multiplier_0_1_18
+MixerI/s_Multiplier_0_1_17
+MixerI/s_Multiplier_0_1_16
+MixerI/s_Multiplier_0_1_15
+MixerI/s_Multiplier_0_1_14
+MixerI/s_Multiplier_0_1_13
+MixerI/s_Multiplier_0_1_12
+MixerI/s_Multiplier_0_1_11
+MixerI/s_Multiplier_0_1_10
+MixerI/s_Multiplier_0_1_9
+MixerI/s_Multiplier_0_1_8
+MixerI/s_Multiplier_0_1_7
+MixerI/s_Multiplier_0_1_6
+MixerI/Multiplier_0_pp_2_5
+MixerI/s_Multiplier_0_0_15
+MixerI/s_Multiplier_0_0_14
+MixerI/s_Multiplier_0_0_13
+MixerI/s_Multiplier_0_0_12
+MixerI/s_Multiplier_0_0_11
+MixerI/s_Multiplier_0_0_10
+MixerI/s_Multiplier_0_0_9
+MixerI/s_Multiplier_0_0_8
+MixerI/s_Multiplier_0_0_7
+MixerI/s_Multiplier_0_0_6
+MixerI/s_Multiplier_0_0_5
+MixerI/s_Multiplier_0_0_4
+MixerI/s_Multiplier_0_0_3
+MixerI/s_Multiplier_0_0_2
+MixerI/Multiplier_0_pp_0_1
+MixerI/rego_o_19
+MixerI/rego_o_18
+MixerI/rego_o_17
+MixerI/rego_o_16
+MixerI/rego_o_15
+MixerI/rego_o_14
+MixerI/rego_o_13
+MixerI/rego_o_12
+MixerI/rego_o_11
+MixerI/rego_o_10
+MixerI/rego_o_9
+MixerI/rego_o_8
+MixerI/rego_o_7
+MixerI/rego_o_6
+MixerI/rego_o_5
+MixerI/rego_o_4
+RFIn_c_9
+RFIn_c_8
+RFIn_c_6
+RFIn_c_5
+RFIn_c_4
+RFIn_c_3
+RFIn_c_2
+RFIn_c_1
+RFIn_c_0
+LOSine_9
+LOSine_8
+LOSine_7
+LOSine_6
+LOSine_5
+LOSine_4
+LOSine_3
+LOSine_2
+LOSine_1
+LOSine_0
+MixerI/f_Multiplier_0_pp_4_19
+MixerI/f_Multiplier_0_pp_4_18
+MixerI/f_Multiplier_0_pp_4_17
+MixerI/f_Multiplier_0_pp_4_16
+MixerI/f_Multiplier_0_pp_4_15
+MixerI/f_Multiplier_0_pp_4_14
+MixerI/f_Multiplier_0_pp_4_13
+MixerI/f_Multiplier_0_pp_4_12
+MixerI/f_Multiplier_0_pp_4_11
+MixerI/f_Multiplier_0_pp_4_10
+MixerI/f_Multiplier_0_pp_4_9
+MixerI/f_Multiplier_0_pp_4_8
+MixerI/f_s_Multiplier_0_1_19
+MixerI/f_s_Multiplier_0_1_18
+MixerI/f_s_Multiplier_0_1_17
+MixerI/f_s_Multiplier_0_1_16
+MixerI/f_s_Multiplier_0_1_15
+MixerI/f_s_Multiplier_0_1_14
+MixerI/f_s_Multiplier_0_1_13
+MixerI/f_s_Multiplier_0_1_12
+MixerI/f_s_Multiplier_0_1_11
+MixerI/f_s_Multiplier_0_1_10
+MixerI/f_s_Multiplier_0_1_9
+MixerI/f_s_Multiplier_0_1_8
+MixerI/f_s_Multiplier_0_1_7
+MixerI/f_s_Multiplier_0_1_6
+MixerI/f_Multiplier_0_pp_2_5
+MixerI/f_Multiplier_0_pp_2_4
+MixerI/f_s_Multiplier_0_0_15
+MixerI/f_s_Multiplier_0_0_14
+MixerI/f_s_Multiplier_0_0_13
+MixerI/f_s_Multiplier_0_0_12
+MixerI/f_s_Multiplier_0_0_11
+MixerI/f_s_Multiplier_0_0_10
+MixerI/f_s_Multiplier_0_0_9
+MixerI/f_s_Multiplier_0_0_8
+MixerI/f_s_Multiplier_0_0_7
+MixerI/f_s_Multiplier_0_0_6
+MixerI/f_s_Multiplier_0_0_5
+MixerI/f_s_Multiplier_0_0_4
+MixerI/rego_o_3
+MixerI/rego_o_2
+MixerI/rego_o_1
+MixerI/rego_o_0
+MixerI/regb_b_9
+MixerI/regb_b_8
+MixerI/regb_b_7
+MixerI/regb_b_6
+MixerI/regb_b_5
+MixerI/regb_b_4
+MixerI/regb_b_3
+MixerI/regb_b_2
+MixerI/regb_b_1
+MixerI/regb_b_0
+MixerI/rega_a_9
+MixerI/rega_a_8
+MixerI/rega_a_7
+MixerI/rega_a_6
+MixerI/rega_a_5
+MixerI/rega_a_4
+MixerI/rega_a_3
+MixerI/rega_a_2
+MixerI/rega_a_1
+MixerI/rega_a_0
+MixerI/Multiplier_0_pp_1_2
+MixerI/Multiplier_0_pp_2_4
+MixerI/Multiplier_0_pp_3_6
+MixerI/Multiplier_0_pp_4_8
+MixerI/Multiplier_0_pp_0_0
+n594
 SinCos1/neg_rom_dob_n_5/S1
 SinCos1/neg_rom_dob_n_5/COUT
 SinCos1/neg_rom_dob_n_0/S0
 SinCos1/neg_rom_addr0_r_n_4/S1
 SinCos1/neg_rom_addr0_r_n_4/COUT
 SinCos1/neg_rom_addr0_r_n_0/S0
+MixerI/t_Multiplier_0_add_3_7/S1
+MixerI/t_Multiplier_0_add_3_7/COUT
+MixerI/Cadd_t_Multiplier_0_3_1/S0
+MixerI/Multiplier_0_add_2_9/S1
+MixerI/Multiplier_0_add_2_9/COUT
+MixerI/Cadd_Multiplier_0_2_1/S0
+MixerI/Cadd_Multiplier_0_1_8/S1
+MixerI/Cadd_Multiplier_0_1_8/COUT
+MixerI/Cadd_Multiplier_0_1_1/S0
+MixerI/Cadd_Multiplier_0_0_8/S1
+MixerI/Cadd_Multiplier_0_0_8/COUT
+MixerI/Cadd_Multiplier_0_0_1/S0
+MixerI/Multiplier_0_Cadd_8_5/S1
+MixerI/Multiplier_0_Cadd_8_5/COUT
+MixerI/Multiplier_0_cin_lr_add_8/S1
+MixerI/Multiplier_0_cin_lr_add_8/S0
+MixerI/Multiplier_0_Cadd_6_5/S1
+MixerI/Multiplier_0_Cadd_6_5/COUT
+MixerI/Multiplier_0_cin_lr_add_6/S1
+MixerI/Multiplier_0_cin_lr_add_6/S0
+MixerI/Multiplier_0_Cadd_4_5/S1
+MixerI/Multiplier_0_Cadd_4_5/COUT
+MixerI/Multiplier_0_cin_lr_add_4/S1
+MixerI/Multiplier_0_cin_lr_add_4/S0
+MixerI/Multiplier_0_Cadd_2_5/S1
+MixerI/Multiplier_0_Cadd_2_5/COUT
+MixerI/Multiplier_0_cin_lr_add_2/S1
+MixerI/Multiplier_0_cin_lr_add_2/S0
+MixerI/Multiplier_0_Cadd_0_5/S1
+MixerI/Multiplier_0_Cadd_0_5/COUT
+MixerI/Multiplier_0_cin_lr_add_0/S1
+MixerI/Multiplier_0_cin_lr_add_0/S0
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Oct 29 21:13:55 2024
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Oct 29 23:31:54 2024
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MYLED[0]" SITE "97" ;
 LOCATE COMP "MYLED[1]" SITE "98" ;
+LOCATE COMP "MixerOutSin[17]" SITE "6" ;
+LOCATE COMP "MixerOutSin[18]" SITE "5" ;
 LOCATE COMP "MYLED[2]" SITE "99" ;
 LOCATE COMP "MYLED[3]" SITE "100" ;
-LOCATE COMP "LOSine[6]" SITE "142" ;
 LOCATE COMP "MYLED[4]" SITE "104" ;
-LOCATE COMP "LOSine[7]" SITE "143" ;
 LOCATE COMP "MYLED[5]" SITE "105" ;
 LOCATE COMP "MYLED[6]" SITE "106" ;
+LOCATE COMP "MixerOutSin[19]" SITE "75" ;
+LOCATE COMP "RFIn[7]" SITE "34" ;
 LOCATE COMP "MYLED[7]" SITE "107" ;
-LOCATE COMP "XIn" SITE "3" ;
 LOCATE COMP "TX_NCO" SITE "42" ;
 LOCATE COMP "TX" SITE "44" ;
+LOCATE COMP "XIn" SITE "3" ;
 FREQUENCY NET "osc_clk" 120.000000 MHz ;
 FREQUENCY NET "TX_NCO_c_9" 22.000000 MHz ;
 FREQUENCY NET "XIn_c" 8.000000 MHz ;

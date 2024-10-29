@@ -1,30 +1,40 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Tue Oct 29 21:14:26 2024 *
+NOTE DATE CREATED: Tue Oct 29 23:32:49 2024 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
+NOTE PINS MixerOutSin[16] : 127 : out *
 NOTE PINS MYLED[0] : 97 : out *
+NOTE PINS MixerOutSin[15] : 128 : out *
+NOTE PINS MixerOutSin[12] : 73 : out *
 NOTE PINS MYLED[1] : 98 : out *
-NOTE PINS LOSine[4] : 26 : out *
+NOTE PINS MixerOutSin[17] : 6 : out *
+NOTE PINS MixerOutSin[18] : 5 : out *
 NOTE PINS MYLED[2] : 99 : out *
-NOTE PINS LOSine[5] : 22 : out *
 NOTE PINS MYLED[3] : 100 : out *
-NOTE PINS LOSine[6] : 142 : out *
-NOTE PINS LOSine[2] : 19 : out *
 NOTE PINS MYLED[4] : 104 : out *
-NOTE PINS LOSine[7] : 143 : out *
-NOTE PINS LOSine[8] : 23 : out *
 NOTE PINS MYLED[5] : 105 : out *
 NOTE PINS MYLED[6] : 106 : out *
-NOTE PINS LOSine[3] : 20 : out *
+NOTE PINS MixerOutSin[19] : 75 : out *
+NOTE PINS MixerOutSin[13] : 24 : out *
+NOTE PINS MixerOutSin[14] : 23 : out *
+NOTE PINS MixerOutSin[1] : 85 : out *
+NOTE PINS MixerOutSin[2] : 93 : out *
+NOTE PINS MixerOutSin[3] : 84 : out *
+NOTE PINS MixerOutSin[4] : 86 : out *
+NOTE PINS MixerOutSin[5] : 92 : out *
+NOTE PINS MixerOutSin[6] : 89 : out *
+NOTE PINS MixerOutSin[7] : 96 : out *
+NOTE PINS MixerOutSin[8] : 95 : out *
+NOTE PINS MixerOutSin[9] : 87 : out *
+NOTE PINS MixerOutSin[10] : 91 : out *
+NOTE PINS MixerOutSin[11] : 74 : out *
+NOTE PINS RFIn[7] : 34 : in *
+NOTE PINS MixerOutSin[0] : 94 : out *
 NOTE PINS MYLED[7] : 107 : out *
-NOTE PINS XIn : 3 : in *
 NOTE PINS TX_NCO : 42 : out *
-NOTE PINS clk_adc : 87 : out *
 NOTE PINS TX : 44 : out *
-NOTE PINS LOSine[0] : 21 : out *
-NOTE PINS LOSine[1] : 24 : out *
-NOTE PINS LOSine[9] : 25 : out *
+NOTE PINS XIn : 3 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

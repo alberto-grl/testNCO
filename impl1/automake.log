@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Oct 29 21:13:54 2024
+Tue Oct 29 23:31:49 2024
 
 
 Command Line:  synthesis -f testNCO_impl1_lattice.synproj -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml 
@@ -73,6 +73,7 @@ Verilog design file = C:/Users/alberto/Lattice/testNCO/impl1/source/top.v
 Verilog design file = C:/Users/alberto/Lattice/testNCO/PLL.v
 Verilog design file = C:/Users/alberto/Lattice/testNCO/PLL_TX.v
 Verilog design file = C:/Users/alberto/Lattice/testNCO/SinCos.v
+Verilog design file = C:/Users/alberto/Lattice/testNCO/Multiplier.v
 NGD file = testNCO_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -85,10 +86,10 @@ Compile design.
 Compile Design Begin
 Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/nco.v. VERI-1482
 Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/top.v. VERI-1482
-    <postMsg mid="35901372" type="Warning" dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/impl1/source/top.v(28): " arg1="clk_adc" arg2="c:/users/alberto/lattice/testnco/impl1/source/top.v" arg3="28"  />
 Analyzing Verilog file c:/users/alberto/lattice/testnco/pll.v. VERI-1482
 Analyzing Verilog file c:/users/alberto/lattice/testnco/pll_tx.v. VERI-1482
 Analyzing Verilog file c:/users/alberto/lattice/testnco/sincos.v. VERI-1482
+Analyzing Verilog file c:/users/alberto/lattice/testnco/multiplier.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/impl1/source/top.v(14): " arg1="top" arg2="c:/users/alberto/lattice/testnco/impl1/source/top.v" arg3="14"  />
@@ -106,6 +107,9 @@ Top module name (Verilog): top
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/impl1/source/nco.v(13): " arg1="nco_sig" arg2="c:/users/alberto/lattice/testnco/impl1/source/nco.v" arg3="13"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/multiplier.v(8): " arg1="Multiplier" arg2="c:/users/alberto/lattice/testnco/multiplier.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): " arg1="ND2" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="797"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): " arg1="MULT2" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="684"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/pll.v(8): " arg1="PLL" arg2="c:/users/alberto/lattice/testnco/pll.v" arg3="8"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=3,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/pll_tx.v(8): " arg1="PLL_TX" arg2="c:/users/alberto/lattice/testnco/pll_tx.v" arg3="8"  />
@@ -118,14 +122,14 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="phase_inc_carrGen"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="phase_inc_carrGen"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="phase_inc_carrGen"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="phase_inc_carrGen"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="phase_inc_carrGen"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="phase_inc_carrGen"  />
@@ -249,57 +253,20 @@ Top-level module name = top.
 
 
 
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): " arg1="\ncoGen/phase_accum_i28" arg2="c:/users/alberto/lattice/testnco/impl1/source/nco.v" arg3="35"  />
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): " arg1="\ncoGen/phase_accum_i11" arg2="c:/users/alberto/lattice/testnco/impl1/source/nco.v" arg3="35"  />
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
 Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
 Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
 Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
 Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
 Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
 Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
 Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
-Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
-Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
-Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
-Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
-Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
-Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
-Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
-Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
-Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
-Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
 Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
 Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
 Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
@@ -309,21 +276,58 @@ Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \Sin
 Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
 Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
 Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
 Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
 Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
 Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
 Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
-Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
-Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
-Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
 Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
 Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_33 is a one-to-one match with \SinCos1/FF_28.
 Applying 100.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -339,25 +343,27 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    134 blocks expanded
+    327 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file testNCO_impl1.ngd.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 27 of 7209 (0 % )
-AND2 => 1
+Number of register bits => 111 of 7209 (1 % )
+AND2 => 6
 DP8KC => 2
 EHXPLLJ => 2
-FADD2B => 11
-FD1P3DX => 22
+FADD2B => 53
+FD1P3DX => 106
 FD1S3AX => 5
 GSR => 1
-IB => 1
+IB => 11
 INV => 20
 LUT4 => 6
+MULT2 => 25
 MUX21 => 36
-OB => 21
+ND2 => 18
+OB => 30
 PUR => 1
 ROM16X1A => 3
 ################### End Area Report ##################
@@ -369,7 +375,7 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 5
-  Net : clk_adc_c, loads : 28
+  Net : clk_adc, loads : 111
   Net : osc_clk, loads : 6
   Net : ncoGen/TX_NCO_c_9, loads : 4
   Net : XIn_c, loads : 1
@@ -380,15 +386,15 @@ Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : SinCos1/mx_ctrl_r, loads : 17
-  Net : SinCos1/sinromoutsel, loads : 10
-  Net : SinCos1/sinout_sel, loads : 10
-  Net : n574, loads : 6
-  Net : ncoGen/phase_accum_60, loads : 4
-  Net : ncoGen/phase_accum_61, loads : 3
-  Net : SinCos1/rom_addr0_r_1, loads : 3
-  Net : SinCos1/rom_addr0_r_2, loads : 3
-  Net : SinCos1/rom_addr0_r_4, loads : 3
-  Net : SinCos1/rom_addr0_r_3, loads : 3
+  Net : MixerI/regb_b_2, loads : 11
+  Net : MixerI/regb_b_4, loads : 11
+  Net : MixerI/regb_b_6, loads : 11
+  Net : MixerI/regb_b_8, loads : 11
+  Net : MixerI/regb_b_1, loads : 10
+  Net : MixerI/rega_a_9, loads : 10
+  Net : MixerI/rega_a_0, loads : 10
+  Net : MixerI/regb_b_3, loads : 10
+  Net : MixerI/regb_b_5, loads : 10
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -398,10 +404,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 10.000000 -name    |             |             |
-clk1 [get_nets clk_adc_c]               |  100.000 MHz|   53.778 MHz|    10 *
+clk1 [get_nets osc_clk]                 |  100.000 MHz|  285.714 MHz|     2  
                                         |             |             |
 create_clock -period 10.000000 -name    |             |             |
-clk0 [get_nets osc_clk]                 |  100.000 MHz|  285.714 MHz|     2  
+clk0 [get_nets clk_adc]                 |  100.000 MHz|   53.778 MHz|    10 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -409,10 +415,10 @@ clk0 [get_nets osc_clk]                 |  100.000 MHz|  285.714 MHz|     2
 1 constraints not met.
 
 
-Peak Memory Usage: 59.785  MB
+Peak Memory Usage: 65.320  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.828  secs
+Elapsed CPU time for LSE flow : 1.578  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "testNCO_impl1.ngd" -o "testNCO_impl1_map.ncd" -pr "testNCO_impl1.prf" -mp "testNCO_impl1.mrp" -lpf "C:/Users/alberto/Lattice/testNCO/impl1/testNCO_impl1.lpf" -lpf "C:/Users/alberto/Lattice/testNCO/testNCO.lpf"  -c 0           
@@ -449,19 +455,19 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:     27 out of  7209 (0%)
-      PFU registers:           27 out of  6864 (0%)
+   Number of registers:     14 out of  7209 (0%)
+      PFU registers:           14 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        29 out of  3432 (1%)
-      SLICEs as Logic/ROM:     29 out of  3432 (1%)
+   Number of SLICEs:        27 out of  3432 (1%)
+      SLICEs as Logic/ROM:     27 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:         11 out of  3432 (0%)
-   Number of LUT4s:         58 out of  6864 (1%)
-      Number used as logic LUTs:         36
+      SLICEs as Carry:          5 out of  3432 (0%)
+   Number of LUT4s:         53 out of  6864 (1%)
+      Number used as logic LUTs:         43
       Number used as distributed RAM:     0
-      Number used as ripple logic:       22
+      Number used as ripple logic:       10
       Number used as shift registers:     0
-   Number of PIO sites used: 22 + 4(JTAG) out of 115 (23%)
+   Number of PIO sites used: 32 + 4(JTAG) out of 115 (31%)
    Number of block RAMs:  2 out of 26 (8%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -487,15 +493,13 @@ Design Summary:
    Number of clocks:  4
      Net osc_clk: 5 loads, 5 rising, 0 falling (Driver: PLL1/PLLInst_0 )
      Net TX_NCO_c_9: 1 loads, 1 rising, 0 falling (Driver: ncoGen/phase_accum_i63 )
+     Net clk_adc: 10 loads, 10 rising, 0 falling (Driver: clk_adc_9 )
      Net XIn_c: 1 loads, 1 rising, 0 falling (Driver: PIO XIn )
-     Net clk_adc_c: 16 loads, 16 rising, 0 falling (Driver: clk_adc_9 )
    Number of Clock Enables:  0
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net SinCos1/mx_ctrl_r: 17 loads
-     Net SinCos1/sinout_sel: 10 loads
-     Net SinCos1/sinromoutsel: 10 loads
+     Net SinCos1/mx_ctrl_r: 16 loads
      Net phase_accum_60: 5 loads
      Net phase_accum_61: 4 loads
      Net phase_accum_62: 3 loads
@@ -503,6 +507,8 @@ Design Summary:
      Net SinCos1/rom_addr0_r_2: 3 loads
      Net SinCos1/rom_addr0_r_3: 3 loads
      Net SinCos1/rom_addr0_r_4: 3 loads
+     Net SinCos1/rom_addr0_r_5: 3 loads
+     Net SinCos1/rom_addr0_r_6: 3 loads
  
 
    Number of warnings:  0
@@ -510,9 +516,9 @@ Design Summary:
 
 
 
-Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
-Peak Memory Usage: 59 MB
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 60 MB
 
 Dumping design to file testNCO_impl1_map.ncd.
 
@@ -527,7 +533,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "testNCO_impl1_map.ncd"
-Tue Oct 29 21:13:57 2024
+Tue Oct 29 23:31:55 2024
 
 PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 testNCO_impl1_map.ncd testNCO_impl1.dir/5_1.ncd testNCO_impl1.prf
@@ -551,10 +557,10 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   22+4(JTAG)/336     8% used
-                  22+4(JTAG)/115     23% bonded
+   PIO (prelim)   32+4(JTAG)/336     11% used
+                  32+4(JTAG)/115     31% bonded
 
-   SLICE             29/3432         <1% used
+   SLICE             27/3432         <1% used
 
    EBR                2/26            7% used
    PLL                2/2           100% used
@@ -562,17 +568,17 @@ Device utilization summary:
 
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 INFO: Design contains pre-loadable EBR during configuration that has a requirement: Since the GSR is disabled for the EBR, make sure write enable and chip enable are inactive during wake-up, so that the pre-loaded initialization values will not be corrupted during wake-up state.
-Number of Signals: 103
-Number of Connections: 235
+Number of Signals: 73
+Number of Connections: 159
 
 Pin Constraint Summary:
-   13 out of 22 pins locked (59% locked).
+   15 out of 32 pins locked (46% locked).
 
     <postMsg mid="61091062" type="Warning" dynamic="0" navigation="0"  />
 The following 3 signals are selected to use the primary clock routing resources:
     osc_clk (driver: PLL1/PLLInst_0, clk load #: 4)
     TX_c (driver: PLL2/PLLInst_0, clk load #: 0)
-    clk_adc_c (driver: SLICE_25, clk load #: 16)
+    clk_adc (driver: SLICE_11, clk load #: 10)
 
 
 No signal is selected as secondary clock.
@@ -580,18 +586,18 @@ No signal is selected as secondary clock.
 No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-..............
-Finished Placer Phase 0.  REAL time: 0 secs 
+............
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 ....................
-Placer score = 26054.
-Finished Placer Phase 1.  REAL time: 11 secs 
+Placer score = 18684.
+Finished Placer Phase 1.  REAL time: 16 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  23218
-Finished Placer Phase 2.  REAL time: 11 secs 
+Placer score =  18417
+Finished Placer Phase 2.  REAL time: 16 secs 
 
 
 ------------------ Clock Report ------------------
@@ -605,7 +611,7 @@ Global Clock Resources:
 Global Clocks:
   PRIMARY "osc_clk" from CLKOP on comp "PLL1/PLLInst_0" on PLL site "LPLL", clk load = 4
   PRIMARY "TX_c" from CLKOP on comp "PLL2/PLLInst_0" on PLL site "RPLL", clk load = 0
-  PRIMARY "clk_adc_c" from Q0 on comp "SLICE_25" on site "R2C19C", clk load = 16
+  PRIMARY "clk_adc" from Q0 on comp "SLICE_11" on site "R2C19D", clk load = 10
 
   PRIMARY  : 3 out of 8 (37%)
   SECONDARY: 0 out of 8 (0%)
@@ -617,35 +623,35 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   22 + 4(JTAG) out of 336 (7.7%) PIO sites used.
-   22 + 4(JTAG) out of 115 (22.6%) bonded PIO sites used.
-   Number of PIO comps: 22; differential: 0.
+   32 + 4(JTAG) out of 336 (10.7%) PIO sites used.
+   32 + 4(JTAG) out of 115 (31.3%) bonded PIO sites used.
+   Number of PIO comps: 32; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+-----------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref |
-+----------+---------------+------------+-----------+
-| 0        | 2 / 28 (  7%) | 2.5V       | -         |
-| 1        | 9 / 29 ( 31%) | 2.5V       | -         |
-| 2        | 2 / 29 (  6%) | 3.3V       | -         |
-| 3        | 2 / 9 ( 22%)  | 2.5V       | -         |
-| 4        | 6 / 10 ( 60%) | 2.5V       | -         |
-| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
-+----------+---------------+------------+-----------+
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 2 / 28 (  7%)  | 2.5V       | -         |
+| 1        | 22 / 29 ( 75%) | 2.5V       | -         |
+| 2        | 2 / 29 (  6%)  | 3.3V       | -         |
+| 3        | 1 / 9 ( 11%)   | 2.5V       | -         |
+| 4        | 2 / 10 ( 20%)  | 2.5V       | -         |
+| 5        | 3 / 10 ( 30%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
 
-Total placer CPU time: 10 secs 
+Total placer CPU time: 14 secs 
 
 Dumping design to file testNCO_impl1.dir/5_1.ncd.
 
-0 connections routed; 235 unrouted.
+0 connections routed; 159 unrouted.
 Starting router resource preassignment
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=TX_NCO_c_9 loads=4 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=TX_NCO_c_9 loads=3 clock_loads=1"  />
 
-Completed router resource preassignment. Real time: 13 secs 
+Completed router resource preassignment. Real time: 20 secs 
 
-Start NBR router at 21:14:10 10/29/24
+Start NBR router at 23:32:15 10/29/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -660,48 +666,54 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 21:14:10 10/29/24
+Start NBR special constraint process at 23:32:16 10/29/24
 
-Start NBR section for initial routing at 21:14:10 10/29/24
+Start NBR section for initial routing at 23:32:16 10/29/24
 Level 1, iteration 1
-0(0.00%) conflict; 185(78.72%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.543ns/0.000ns; real time: 14 secs 
+0(0.00%) conflict; 130(81.76%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.104ns/0.000ns; real time: 21 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 184(78.30%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.493ns/0.000ns; real time: 14 secs 
+3(0.00%) conflicts; 124(77.99%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.387ns/0.000ns; real time: 21 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 184(78.30%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.543ns/0.000ns; real time: 14 secs 
+0(0.00%) conflict; 124(77.99%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.091ns/0.000ns; real time: 21 secs 
 Level 4, iteration 1
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.787ns/0.000ns; real time: 14 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.180ns/0.000ns; real time: 21 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:14:11 10/29/24
+Start NBR section for normal routing at 23:32:16 10/29/24
 Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.180ns/0.000ns; real time: 21 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 6.180ns/0.000ns; real time: 21 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.787ns/0.000ns; real time: 14 secs 
+Estimated worst slack/total negative slack<setup>: 6.180ns/0.000ns; real time: 21 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 21:14:11 10/29/24
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:32:16 10/29/24
 Level 4, iteration 0
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<hold >: 0.113ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<hold >: 0.121ns/0.000ns; real time: 30 secs 
 Level 4, iteration 0
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.768ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 5.950ns/0.000ns; real time: 30 secs 
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.768ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 5.950ns/0.000ns; real time: 30 secs 
 
-Start NBR section for re-routing at 21:14:12 10/29/24
+Start NBR section for re-routing at 23:32:27 10/29/24
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.788ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 5.970ns/0.000ns; real time: 32 secs 
 
-Start NBR section for post-routing at 21:14:12 10/29/24
+Start NBR section for post-routing at 23:32:27 10/29/24
 
 End NBR router with 0 unrouted connection
 
@@ -709,19 +721,19 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 5.788ns
+  Estimated worst slack<setup> : 6.188ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=TX_NCO_c_9 loads=4 clock_loads=1"  />
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=TX_NCO_c_9 loads=3 clock_loads=1"  />
 
-Total CPU time 15 secs 
-Total REAL time: 16 secs 
+Total CPU time 20 secs 
+Total REAL time: 33 secs 
 Completely routed.
-End of route.  235 routed (100.00%); 0 unrouted.
+End of route.  159 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -732,14 +744,14 @@ Dumping design to file testNCO_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 5.788
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 6.188
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.118
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.126
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 15 secs 
-Total REAL time to completion: 16 secs 
+Total CPU  time to completion: 21 secs 
+Total REAL time to completion: 33 secs 
 
 par done!
 
@@ -776,7 +788,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Tue Oct 29 21:14:14 2024
+Tue Oct 29 23:32:30 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -805,11 +817,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 362 paths, 6 nets, and 222 connections (94.47% coverage)
+Constraints cover 222 paths, 6 nets, and 156 connections (98.11% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Tue Oct 29 21:14:14 2024
+Tue Oct 29 23:32:30 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -838,7 +850,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 362 paths, 6 nets, and 222 connections (94.47% coverage)
+Constraints cover 222 paths, 6 nets, and 156 connections (98.11% coverage)
 
 
 
@@ -852,8 +864,8 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 68 MB
 
 
@@ -936,8 +948,8 @@ Creating bit map...
 Bitstream Status: Final           Version 1.95.
  
 Saving bit stream in "testNCO_impl1.bit".
-Total CPU Time: 5 secs 
-Total REAL Time: 6 secs 
+Total CPU Time: 7 secs 
+Total REAL Time: 10 secs 
 Peak Memory Usage: 290 MB
 
 tmcheck -par "testNCO_impl1.par" 
@@ -1032,9 +1044,9 @@ Initialized UFM Pages:                     0 Page.
 =========
 Padding summary
 =========
-Padded 1225856 bits for this design
+Padded 1227136 bits for this design
 
 
-Total CPU Time: 5 secs 
-Total REAL Time: 6 secs 
+Total CPU Time: 6 secs 
+Total REAL Time: 8 secs 
 Peak Memory Usage: 290 MB

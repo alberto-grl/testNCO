@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/alberto/Lattice/testNCO/impl1/testNCO_impl1.bit</File>
-			<FileTime>10/29/24 21:03:21</FileTime>
-			<JedecChecksum>0x5F22</JedecChecksum>
+			<FileTime>10/29/24 23:32:41</FileTime>
+			<JedecChecksum>0x9152</JedecChecksum>
 			<Operation>SRAM Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

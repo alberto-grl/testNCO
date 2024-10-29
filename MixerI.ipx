@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="MixerI" module="Multiplier" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 10 29 21:29:06.160" version="4.9" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="MixerI.lpc" type="lpc" modified="2024 10 29 21:27:52.416"/>
+		<File name="MixerI.v" type="top_level_verilog" modified="2024 10 29 21:27:52.528"/>
+		<File name="MixerI_tmpl.v" type="template_verilog" modified="2024 10 29 21:27:52.528"/>
+		<File name="tb_MixerI_tmpl.v" type="testbench_verilog" modified="2024 10 29 21:27:52.542"/>
+  </Package>
+</DiamondModule>

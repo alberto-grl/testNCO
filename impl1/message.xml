@@ -28,14 +28,6 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35901372</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/top.v(28): </Dynamic>
-            <Dynamic>clk_adc</Dynamic>
-            <Navigation>c:/users/alberto/lattice/testnco/impl1/source/top.v</Navigation>
-            <Navigation>28</Navigation>
-        </Message>
-        <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/top.v(14): </Dynamic>
@@ -158,6 +150,30 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
+            <Dynamic>c:/users/alberto/lattice/testnco/multiplier.v(8): </Dynamic>
+            <Dynamic>Multiplier</Dynamic>
+            <Navigation>c:/users/alberto/lattice/testnco/multiplier.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
             <Dynamic>c:/users/alberto/lattice/testnco/pll.v(8): </Dynamic>
             <Dynamic>PLL</Dynamic>
             <Navigation>c:/users/alberto/lattice/testnco/pll.v</Navigation>
@@ -190,49 +206,49 @@
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>7</Dynamic>
+            <Dynamic>63</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>6</Dynamic>
+            <Dynamic>62</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>5</Dynamic>
+            <Dynamic>61</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>4</Dynamic>
+            <Dynamic>60</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
+            <Dynamic>59</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
+            <Dynamic>58</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>1</Dynamic>
+            <Dynamic>57</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
-            <Dynamic>0</Dynamic>
+            <Dynamic>56</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
@@ -959,7 +975,7 @@
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): </Dynamic>
-            <Dynamic>\ncoGen/phase_accum_i28</Dynamic>
+            <Dynamic>\ncoGen/phase_accum_i11</Dynamic>
             <Navigation>c:/users/alberto/lattice/testnco/impl1/source/nco.v</Navigation>
             <Navigation>35</Navigation>
         </Message>
@@ -977,13 +993,13 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=TX_NCO_c_9 loads=4 clock_loads=1</Dynamic>
+   Signal=TX_NCO_c_9 loads=3 clock_loads=1</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=TX_NCO_c_9 loads=4 clock_loads=1</Dynamic>
+   Signal=TX_NCO_c_9 loads=3 clock_loads=1</Dynamic>
         </Message>
     </Task>
     <Task name="Jedecgen">

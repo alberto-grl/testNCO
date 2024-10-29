@@ -1,5 +1,5 @@
 SCUBA, Version Diamond (64-bit) 3.14.0.75.2
-Mon Oct 28 21:21:52 2024
+Tue Oct 29 21:39:36 2024
   
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -9,25 +9,24 @@ Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
   
 BEGIN SCUBA Module Synthesis
   
-    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n SinCos -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 10 -width 10 -input_reg -mode 2 -output_reg -area -pipeline 1 
-    Circuit name     : SinCos
-    Module type      : cosine
-    Module Version   : 1.6
+    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n Multiplier -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 10 -widthb 10 -widthp 20 -signed -PL_stages 1 -input_reg -output_reg -clk0 -ce0 -rst0 
+    Circuit name     : Multiplier
+    Module type      : dspmult_a
+    Module Version   : 4.9
     Ports            : 
-    Inputs       : Clock, ClkEn, Reset, Theta[9:0]
-    Outputs      : Sine[9:0], Cosine[9:0]
+    Inputs       : Clock, ClkEn, Aclr, DataA[9:0], DataB[9:0]
+    Outputs      : Result[19:0]
     I/O buffer       : not inserted
-    EDIF output      : SinCos.edn
-    Verilog output   : SinCos.v
-    Verilog template : SinCos_tmpl.v
-    Verilog testbench: tb_SinCos_tmpl.v
+    EDIF output      : Multiplier.edn
+    Verilog output   : Multiplier.v
+    Verilog template : Multiplier_tmpl.v
+    Verilog testbench: tb_Multiplier_tmpl.v
     Verilog purpose  : for synthesis and simulation
     Bus notation     : big endian
-    Report output    : SinCos.srp
+    Report output    : Multiplier.srp
     Estimated Resource Usage:
-            LUT : 96
-            EBR : 2
-            Reg : 34
+            LUT : 157
+            Reg : 84
   
 END   SCUBA Module Synthesis
 

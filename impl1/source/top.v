@@ -14,14 +14,16 @@ Standalone test of NCO for FPGARX
 module top 
   (
    	output [7:0] MYLED,
-	output [9:0] LOSine,
 	output TX,
-	output clk_adc,
+	//output clk_adc,
 	output TX_NCO,
+	input [9:0] RFIn,
+	output [19:0] MixerOutSin,
 	input XIn
 	);
+
 wire [63:0] phase_accum;
-//wire signed [9:0] LOSine;
+wire signed [9:0] LOSine;
 wire signed [9:0] LOCosine;
 reg signed [63:0] phase_inc_carrGen;
 reg signed [63:0] phase_inc_carrGen1;
@@ -56,7 +58,15 @@ nco_sig	 ncoGen (
 //.cos_out (cosGen)
 );
 
-	
+
+Multiplier MixerI  (
+	.Clock (clk_adc),
+    .ClkEn (1'b1),
+    .Aclr (1'b1),
+    .DataA (LOSine[9:0]),
+    .DataB (RFIn[9:0]),
+    .Result (MixerOutSin[19:0])
+);
 
 PLL PLL1 (
 .CLKI (XIn),.CLKOP (osc_clk)
@@ -69,7 +79,9 @@ PLL_TX PLL2 (
 );	  
 	  
 	  
-assign MYLED[7:0] = phase_inc_carrGen[63:56];
+assign MYLED[7:2] = 1; //phase_inc_carrGen[63:61];
+assign MYLED[0] = MixerOutSin[7];
+assign MYLED[1] = RFIn[7];
 //assign TX = phase_accum[63];
 assign TX_NCO = phase_accum[63];
 
