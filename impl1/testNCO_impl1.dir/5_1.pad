@@ -6,12 +6,22 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Mon Oct 28 18:37:01 2024
+Tue Oct 29 21:14:08 2024
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| LOSine[0] | 21/4     | LVCMOS25_OUT | PL15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[1] | 24/4     | LVCMOS25_OUT | PL17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[2] | 19/4     | LVCMOS25_OUT | PL12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[3] | 20/4     | LVCMOS25_OUT | PL12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[4] | 26/3     | LVCMOS25_OUT | PL19B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[5] | 22/4     | LVCMOS25_OUT | PL15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[6] | 142/0    | LVCMOS25_OUT | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LOSine[7] | 143/0    | LVCMOS25_OUT | PT9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| LOSine[8] | 23/4     | LVCMOS25_OUT | PL17A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| LOSine[9] | 25/3     | LVCMOS25_OUT | PL19A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | MYLED[0]  | 97/1     | LVCMOS25_OUT | PR7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MYLED[1]  | 98/1     | LVCMOS25_OUT | PR7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MYLED[2]  | 99/1     | LVCMOS25_OUT | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -23,14 +33,18 @@ Pinout by Port Name:
 | TX        | 44/2     | LVCMOS33_OUT | PB12A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | TX_NCO    | 42/2     | LVCMOS33_OUT | PB9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | XIn       | 3/5      | LVCMOS25_IN  | PL4A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| clk_adc   | 87/1     | LVCMOS25_OUT | PR15B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
+| 0    | 2.5V  |
 | 1    | 2.5V  |
 | 2    | 3.3V  |
+| 3    | 2.5V  |
+| 4    | 2.5V  |
 | 5    | 2.5V  |
 +------+-------+
 
@@ -58,14 +72,14 @@ Pinout by Pin Number:
 | 14/4     |     unused, PULL:DOWN |            |              | PL10B |                |           |           |
 | 15/4     |     unused, PULL:DOWN |            |              | PL11A |                |           |           |
 | 17/4     |     unused, PULL:DOWN |            |              | PL11B |                |           |           |
-| 19/4     |     unused, PULL:DOWN |            |              | PL12A | PCLKT4_0       |           |           |
-| 20/4     |     unused, PULL:DOWN |            |              | PL12B | PCLKC4_0       |           |           |
-| 21/4     |     unused, PULL:DOWN |            |              | PL15A |                |           |           |
-| 22/4     |     unused, PULL:DOWN |            |              | PL15B |                |           |           |
-| 23/4     |     unused, PULL:DOWN |            |              | PL17A |                |           |           |
-| 24/4     |     unused, PULL:DOWN |            |              | PL17B |                |           |           |
-| 25/3     |     unused, PULL:DOWN |            |              | PL19A |                |           |           |
-| 26/3     |     unused, PULL:DOWN |            |              | PL19B |                |           |           |
+| 19/4     | LOSine[2]             |            | LVCMOS25_OUT | PL12A | PCLKT4_0       |           |           |
+| 20/4     | LOSine[3]             |            | LVCMOS25_OUT | PL12B | PCLKC4_0       |           |           |
+| 21/4     | LOSine[0]             |            | LVCMOS25_OUT | PL15A |                |           |           |
+| 22/4     | LOSine[5]             |            | LVCMOS25_OUT | PL15B |                |           |           |
+| 23/4     | LOSine[8]             |            | LVCMOS25_OUT | PL17A |                |           |           |
+| 24/4     | LOSine[1]             |            | LVCMOS25_OUT | PL17B |                |           |           |
+| 25/3     | LOSine[9]             |            | LVCMOS25_OUT | PL19A |                |           |           |
+| 26/3     | LOSine[4]             |            | LVCMOS25_OUT | PL19B |                |           |           |
 | 27/3     |     unused, PULL:DOWN |            |              | PL22A | PCLKT3_0       |           |           |
 | 28/3     |     unused, PULL:DOWN |            |              | PL22B | PCLKC3_0       |           |           |
 | 31/3     |     unused, PULL:DOWN |            |              | PL23D |                |           |           |
@@ -114,7 +128,7 @@ Pinout by Pin Number:
 | 84/1     |     unused, PULL:DOWN |            |              | PR17A | DQ1            |           |           |
 | 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
 | 86/1     |     unused, PULL:DOWN |            |              | PR16A | DQS1           |           |           |
-| 87/1     |     unused, PULL:DOWN |            |              | PR15B |                |           |           |
+| 87/1     | clk_adc               |            | LVCMOS25_OUT | PR15B |                |           |           |
 | 89/1     |     unused, PULL:DOWN |            |              | PR15A |                |           |           |
 | 91/1     |     unused, PULL:DOWN |            |              | PR12B | PCLKC1_0/DQ0   |           |           |
 | 92/1     |     unused, PULL:DOWN |            |              | PR12A | PCLKT1_0/DQ0   |           |           |
@@ -157,8 +171,8 @@ Pinout by Pin Number:
 | 139/0    |     unused, PULL:DOWN |            |              | PT11A |                |           |           |
 | 140/0    |     unused, PULL:DOWN |            |              | PT10B |                |           |           |
 | 141/0    |     unused, PULL:DOWN |            |              | PT10A |                |           |           |
-| 142/0    |     unused, PULL:DOWN |            |              | PT9B  |                |           |           |
-| 143/0    |     unused, PULL:DOWN |            |              | PT9A  |                |           |           |
+| 142/0    | LOSine[6]             | LOCATED    | LVCMOS25_OUT | PT9B  |                |           |           |
+| 143/0    | LOSine[7]             | LOCATED    | LVCMOS25_OUT | PT9A  |                |           |           |
 | PB4C/2   |     unused, PULL:DOWN |            |              | PB4C  |                |           |           |
 | PB4D/2   |     unused, PULL:DOWN |            |              | PB4D  |                |           |           |
 | PB6C/2   |     unused, PULL:DOWN |            |              | PB6C  |                |           |           |
@@ -398,6 +412,16 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
+LOCATE  COMP  "LOSine[0]"  SITE  "21";
+LOCATE  COMP  "LOSine[1]"  SITE  "24";
+LOCATE  COMP  "LOSine[2]"  SITE  "19";
+LOCATE  COMP  "LOSine[3]"  SITE  "20";
+LOCATE  COMP  "LOSine[4]"  SITE  "26";
+LOCATE  COMP  "LOSine[5]"  SITE  "22";
+LOCATE  COMP  "LOSine[6]"  SITE  "142";
+LOCATE  COMP  "LOSine[7]"  SITE  "143";
+LOCATE  COMP  "LOSine[8]"  SITE  "23";
+LOCATE  COMP  "LOSine[9]"  SITE  "25";
 LOCATE  COMP  "MYLED[0]"  SITE  "97";
 LOCATE  COMP  "MYLED[1]"  SITE  "98";
 LOCATE  COMP  "MYLED[2]"  SITE  "99";
@@ -409,20 +433,21 @@ LOCATE  COMP  "MYLED[7]"  SITE  "107";
 LOCATE  COMP  "TX"  SITE  "44";
 LOCATE  COMP  "TX_NCO"  SITE  "42";
 LOCATE  COMP  "XIn"  SITE  "3";
+LOCATE  COMP  "clk_adc"  SITE  "87";
 
-#PLL
-LOCATE  COMP  "PLL2/PLLInst_0"  SITE  "RPLL" ;
 #PLL
 LOCATE  COMP  "PLL1/PLLInst_0"  SITE  "LPLL" ;
+#PLL
+LOCATE  COMP  "PLL2/PLLInst_0"  SITE  "RPLL" ;
 
 
 
 
-PAR: Place And Route Diamond (64-bit) 3.11.0.396.4.
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Oct 28 18:37:01 2024
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Oct 29 21:14:08 2024
 

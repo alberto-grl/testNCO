@@ -14,15 +14,19 @@ Standalone test of NCO for FPGARX
 module top 
   (
    	output [7:0] MYLED,
+	output [9:0] LOSine,
 	output TX,
+	output clk_adc,
 	output TX_NCO,
 	input XIn
 	);
 wire [63:0] phase_accum;
-
+//wire signed [9:0] LOSine;
+wire signed [9:0] LOCosine;
 reg signed [63:0] phase_inc_carrGen;
 reg signed [63:0] phase_inc_carrGen1;
-
+reg clk_adc;
+reg clk_adc_div;
 
 	
 	
@@ -35,6 +39,14 @@ PUR PUR_INST    (.PUR(1'b1));
 // Python: print(hex(pow(2,64) * 1359000 // 80000000))
 
 
+SinCos SinCos1 (
+.Clock (clk_adc),
+.ClkEn (1'b 1),
+.Reset (1'b 0),
+.Theta (phase_accum[63:54]),
+.Sine (LOSine),
+.Cosine (LOCosine)
+);
 
 nco_sig	 ncoGen (
 .clk (osc_clk),
@@ -64,12 +76,17 @@ assign TX_NCO = phase_accum[63];
 always @ (posedge (osc_clk))
 	begin
 	phase_inc_carrGen1 <= phase_inc_carrGen;	
-
-
+	clk_adc <= ~clk_adc;
+/*	if(clk_adc_div)
+		begin
+				clk_adc <= ~clk_adc;
+		end;
+*/
   
  //phase_inc_carrGen <= 64'h 5AFE53579; // 1 Hz
-  //\phase_inc_carrGen <= 64'h 4000000000000000; // 30 MHz
-  phase_inc_carrGen <= 64'h 3D00000000000000; // 22 MHz
+  //phase_inc_carrGen <= 64'h 1AFE53579; // 1 Hz
+  //phase_inc_carrGen <= 64'h 4000000000000000; // 30 MHz
+     phase_inc_carrGen <= 64'h 3000000000000000; // 22 MHz
   end
 
 

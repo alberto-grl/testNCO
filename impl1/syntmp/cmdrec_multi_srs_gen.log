@@ -1,7 +1,7 @@
-C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_comp.srs  -osyn  C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_mult.srs  -log  C:\Users\alberto\Lattice\testNCO\impl1\synlog\testNCO_impl1_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\testNCO_impl1_comp.srs -osyn ..\synwork\testNCO_impl1_mult.srs -log ..\synlog\testNCO_impl1_multi_srs_gen.srr
+C:\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_comp.srs  -osyn  C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_mult.srs  -log  C:\Users\alberto\Lattice\testNCO\impl1\synlog\testNCO_impl1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\testNCO_impl1_comp.srs -osyn ..\synwork\testNCO_impl1_mult.srs -log ..\synlog\testNCO_impl1_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\testNCO_impl1_comp.srs|io:i|time:1730137007|size:9591|exec:0|csum:92720AE6FFC0B79186F644439824819D
-file:..\synwork\testNCO_impl1_mult.srs|io:o|time:1730137008|size:2957|exec:0|csum:
-file:..\synlog\testNCO_impl1_multi_srs_gen.srr|io:o|time:1730137008|size:1125|exec:0|csum:
-file:..\..\..\..\..\..\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1554106952|size:8734720|exec:1|csum:0A206A5298321BBDD627E7975EAE3EC2
+file:..\synwork\testnco_impl1_comp.srs|io:i|time:1730150330|size:23556|exec:0|csum:5AE2E90258810F58FE64D3FD62B5C7D8
+file:..\synwork\testnco_impl1_mult.srs|io:o|time:1730150332|size:3693|exec:0|csum:
+file:..\synlog\testnco_impl1_multi_srs_gen.srr|io:o|time:1730150332|size:1143|exec:0|csum:
+file:..\..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe|io:i|time:1727134362|size:10549248|exec:1|csum:D91EA53737F6BC51A484A15DD0EB29F5

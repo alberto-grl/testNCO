@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1730103767>
+<!@TC:1730150323>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -14,7 +14,7 @@ Hostname: DESKTOP-LI6GKLP
 
 Implementation : impl1
 
-# Written on Mon Oct 28 09:22:55 2024
+# Written on Mon Oct 28 22:18:57 2024
 
 ##### DESIGN INFO #######################################################
 
@@ -36,19 +36,33 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                     Ending                       |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                       System                       |     10.000           |     No paths         |     No paths         |     No paths                         
-PLL|CLKOP_inferred_clock     System                       |     10.000           |     No paths         |     No paths         |     No paths                         
-PLL|CLKOP_inferred_clock     PLL|CLKOP_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-=====================================================================================================================================================================
+Starting                      Ending                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                        System                        |     10.000           |     No paths         |     No paths         |     No paths                         
+System                        top|clk_adc_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+PLL|CLKOP_inferred_clock      System                        |     10.000           |     No paths         |     No paths         |     No paths                         
+PLL|CLKOP_inferred_clock      PLL|CLKOP_inferred_clock      |     10.000           |     No paths         |     No paths         |     No paths                         
+PLL|CLKOP_inferred_clock      top|clk_adc_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+top|clk_adc_derived_clock     System                        |     10.000           |     No paths         |     No paths         |     No paths                         
+top|clk_adc_derived_clock     top|clk_adc_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
 
-<a name=UnconstrainedStartEndPointsCCK37></a>Unconstrained Start/End Points</a>
+<a name=UnconstrainedStartEndPointsCCK41></a>Unconstrained Start/End Points</a>
 ******************************
 
+p:LOSine[0]
+p:LOSine[1]
+p:LOSine[2]
+p:LOSine[3]
+p:LOSine[4]
+p:LOSine[5]
+p:LOSine[6]
+p:LOSine[7]
+p:LOSine[8]
+p:LOSine[9]
 p:MYLED[0]
 p:MYLED[1]
 p:MYLED[2]
@@ -62,25 +76,25 @@ p:TX_NCO
 p:XIn
 
 
-<a name=InapplicableconstraintsCCK38></a>Inapplicable constraints</a>
+<a name=InapplicableconstraintsCCK42></a>Inapplicable constraints</a>
 ************************
 
 (none)
 
 
-<a name=ApplicableConstraintsWithIssuesCCK39></a>Applicable constraints with issues</a>
+<a name=ApplicableConstraintsWithIssuesCCK43></a>Applicable constraints with issues</a>
 **********************************
 
 (none)
 
 
-<a name=ConstraintsWithMatchingWildcardExpressionsCCK40></a>Constraints with matching wildcard expressions</a>
+<a name=ConstraintsWithMatchingWildcardExpressionsCCK44></a>Constraints with matching wildcard expressions</a>
 **********************************************
 
 (none)
 
 
-<a name=LibraryReportCCK41></a>Library Report</a>
+<a name=LibraryReportCCK45></a>Library Report</a>
 **************
 
 

@@ -3,31 +3,43 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.00        100.0
-                                  LUT4	       2.00        100.0
-                                 IOBUF	         11        100.0
-                                PFUREG	          8        100.0
-                                RIPPLE	          5        100.0
+                                  SLIC	      29.00        100.0
+                                  LUT4	      36.00        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	         27        100.0
+                                RIPPLE	         11        100.0
+                                   EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                               nco_sig	          1        83.3
+                               nco_sig	          1         8.0
+                                SinCos	          1        87.4
                                 PLL_TX	          1         0.0
                                    PLL	          1         0.0
 ---------------------------------------------------
-Report for cell PLL_TX
-   Instance path: top/PLL2
+Report for cell nco_sig
+   Instance path: top/ncoGen
                      Cell usage:
                                   cell	      count    Res Usage(%)
+                                  SLIC	       2.33         8.0
+                                  LUT4	       4.00        11.1
+                                PFUREG	          4        14.8
 ---------------------------------------------------
 Report for cell PLL
    Instance path: top/PLL1
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell nco_sig
-   Instance path: top/ncoGen
+Report for cell PLL_TX
+   Instance path: top/PLL2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       5.00        83.3
-                                PFUREG	          8        100.0
-                                RIPPLE	          5        100.0
+---------------------------------------------------
+Report for cell SinCos
+   Instance path: top/SinCos1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.33        87.4
+                                  LUT4	      29.00        80.6
+                                PFUREG	         22        81.5
+                                RIPPLE	         11        100.0
+                                   EBR	          2        100.0

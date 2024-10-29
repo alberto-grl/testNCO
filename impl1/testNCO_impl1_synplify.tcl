@@ -42,13 +42,15 @@ set_option -update_models_cp 0
 set_option -resolve_multiple_driver 0
 
 
+set_option -seqshift_no_replicate 0
 
 #-- add_file options
 set_option -include_path {C:/Users/alberto/Lattice/testNCO}
-add_file -verilog {C:/Users/alberto/Lattice/testNCO/impl1/source/NCO.v}
-add_file -verilog {C:/Users/alberto/Lattice/testNCO/impl1/source/top.v}
-add_file -verilog {C:/Users/alberto/Lattice/testNCO/PLL.v}
-add_file -verilog {C:/Users/alberto/Lattice/testNCO/PLL_TX.v}
+add_file -verilog -vlog_std v2001 {C:/Users/alberto/Lattice/testNCO/impl1/source/NCO.v}
+add_file -verilog -vlog_std v2001 {C:/Users/alberto/Lattice/testNCO/impl1/source/top.v}
+add_file -verilog -vlog_std v2001 {C:/Users/alberto/Lattice/testNCO/PLL.v}
+add_file -verilog -vlog_std v2001 {C:/Users/alberto/Lattice/testNCO/PLL_TX.v}
+add_file -verilog -vlog_std v2001 {C:/Users/alberto/Lattice/testNCO/SinCos.v}
 
 #-- top module name
 set_option -top_module top
@@ -63,4 +65,4 @@ project -log_file {testNCO_impl1.srf}
 
 
 #-- run Synplify with 'arrange HDL file'
-project -run -clean
+project -run

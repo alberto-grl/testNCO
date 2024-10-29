@@ -1,2 +1,4 @@
-@E: CS187 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":65:1:65:5|Expecting )
+@E: CG389 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":40:8:40:13|Reference to undefined module SinCos1
+@E: CG389 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":40:8:40:13|Illegal or Unsupported Syntax within black box. Use: // synthesis translate_off {  unsupported Verilog } // synthesis translate_on 
+@E: CG389 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":40:8:40:13|Alternatively, set the builtin compiler directive IGNORE_VERILOG_BLACKBOX_GUTS in the Verilog tab of the UI or set `define IGNORE_VERILOG_BLACKBOX_GUTS in any Verilog file.
 

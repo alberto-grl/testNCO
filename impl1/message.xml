@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
     <Task name="IBIS">
         <Message>
             <ID>1191031</ID>
@@ -14,6 +26,14 @@
         <Message>
             <ID>35001781</ID>
             <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901372</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/top.v(28): </Dynamic>
+            <Dynamic>clk_adc</Dynamic>
+            <Navigation>c:/users/alberto/lattice/testnco/impl1/source/top.v</Navigation>
+            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -34,18 +54,138 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
+            <Dynamic>c:/users/alberto/lattice/testnco/sincos.v(8): </Dynamic>
+            <Dynamic>SinCos</Dynamic>
+            <Navigation>c:/users/alberto/lattice/testnco/sincos.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): </Dynamic>
+            <Dynamic>INV</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>563</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1173): </Dynamic>
+            <Dynamic>XOR2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1173</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): </Dynamic>
+            <Dynamic>ROM16X1A(initval=16'b1111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1051</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC(RESETMODE=&quot;ASYNC&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): </Dynamic>
+            <Dynamic>FD1P3DX</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>187</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): </Dynamic>
+            <Dynamic>MUX21</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>723</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
             <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/nco.v(13): </Dynamic>
             <Dynamic>nco_sig</Dynamic>
             <Navigation>c:/users/alberto/lattice/testnco/impl1/source/nco.v</Navigation>
             <Navigation>13</Navigation>
         </Message>
         <Message>
-            <ID>35901063</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/top.v(57): </Dynamic>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/alberto/lattice/testnco/pll.v(8): </Dynamic>
             <Dynamic>PLL</Dynamic>
-            <Navigation>c:/users/alberto/lattice/testnco/impl1/source/top.v</Navigation>
-            <Navigation>57</Navigation>
+            <Navigation>c:/users/alberto/lattice/testnco/pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=3,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/alberto/lattice/testnco/pll_tx.v(8): </Dynamic>
+            <Dynamic>PLL_TX</Dynamic>
+            <Navigation>c:/users/alberto/lattice/testnco/pll_tx.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKOP_DIV=24,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=23,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
         </Message>
         <Message>
             <ID>35001747</ID>
@@ -54,19 +194,19 @@
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
-            <ID>35001748</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>6</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
             <Dynamic>5</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
             <Dynamic>4</Dynamic>
             <Dynamic>phase_inc_carrGen</Dynamic>
@@ -438,19 +578,19 @@
             <Dynamic>phase_inc_carrGen1</Dynamic>
         </Message>
         <Message>
-            <ID>35001748</ID>
+            <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>62</Dynamic>
             <Dynamic>phase_inc_carrGen1</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
             <Dynamic>61</Dynamic>
             <Dynamic>phase_inc_carrGen1</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
             <Dynamic>60</Dynamic>
             <Dynamic>phase_inc_carrGen1</Dynamic>
@@ -819,20 +959,13 @@
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): </Dynamic>
-            <Dynamic>\ncoGen/phase_accum_i0</Dynamic>
+            <Dynamic>\ncoGen/phase_accum_i28</Dynamic>
             <Navigation>c:/users/alberto/lattice/testnco/impl1/source/nco.v</Navigation>
             <Navigation>35</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166315</ID>
-            <Severity>Error</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>PLL_TX</Dynamic>
-            <Dynamic>PLL</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">
@@ -844,13 +977,37 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=TX_NCO_c loads=3 clock_loads=1</Dynamic>
+   Signal=TX_NCO_c_9 loads=4 clock_loads=1</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=TX_NCO_c loads=3 clock_loads=1</Dynamic>
+   Signal=TX_NCO_c_9 loads=4 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121027</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MEM_INIT_FILE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121027</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MEM_INIT_FILE</Dynamic>
         </Message>
     </Task>
     <Task name="Synplify_Synthesis">
@@ -861,38 +1018,122 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\alberto\Lattice\testNCO\impl1\source\top.v&quot;:64:0:64:5|Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\alberto\Lattice\testNCO\impl1\source\top.v&quot;:75:0:75:5|Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>C:\Users\alberto\Lattice\testNCO\impl1\source\top.v</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>75</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>75</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\alberto\Lattice\testNCO\impl1\source\top.v&quot;:64:0:64:5|Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\alberto\Lattice\testNCO\impl1\source\top.v&quot;:75:0:75:5|Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>C:\Users\alberto\Lattice\testNCO\impl1\source\top.v</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>75</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>75</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\alberto\lattice\testnco\impl1\source\nco.v&quot;:33:0:33:5|Found inferred clock PLL|CLKOP_inferred_clock which controls 64 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>BZ204 :&quot;c:\users\alberto\lattice\testnco\pll.v&quot;:64:12:64:20|GCC unable to propagate clocks through gate PLL1.PLLInst_0; all outputs will be treated as enables regardless of whether any inputs are clocks</Dynamic>
+            <Navigation>BZ204</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\pll.v</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>64</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>GCC unable to propagate clocks through gate PLL1.PLLInst_0; all outputs will be treated as enables regardless of whether any inputs are clocks</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\alberto\lattice\testnco\impl1\source\nco.v&quot;:33:0:33:5|Found inferred clock PLL|CLKOP_inferred_clock which controls 66 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\alberto\lattice\testnco\impl1\source\nco.v</Navigation>
             <Navigation>33</Navigation>
             <Navigation>0</Navigation>
             <Navigation>33</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock PLL|CLKOP_inferred_clock which controls 64 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock PLL|CLKOP_inferred_clock which controls 66 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net clk_adc has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net clk_adc has multiple drivers .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net osc_clk has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net osc_clk has multiple drivers .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net N_7 has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net N_7 has multiple drivers .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net ncoGen.phase_accum_1_axb_1 has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net ncoGen.phase_accum_1_axb_1 has multiple drivers .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net ncoGen.phase_accum_1_axb_6 has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net ncoGen.phase_accum_1_axb_6 has multiple drivers .</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN161 :&quot;c:\users\alberto\lattice\testnco\impl1\source\top.v&quot;:14:7:14:9|Net ncoGen.phase_accum_1_axb_7 has multiple drivers .</Dynamic>
+            <Navigation>BN161</Navigation>
+            <Navigation>c:\users\alberto\lattice\testnco\impl1\source\top.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Net ncoGen.phase_accum_1_axb_7 has multiple drivers .</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

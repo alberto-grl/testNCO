@@ -6,3 +6,4 @@ File                                                         Type     IN_PROJECT
 "C:\Users\alberto\Lattice\testNCO\PLL_TX.v"               verilog                      IN PROJECT
 "C:\Users\alberto\Lattice\testNCO\PLL.v"                  verilog                      IN PROJECT
 "C:\Users\alberto\Lattice\testNCO\impl1\source\NCO.v"     verilog                      IN PROJECT
+"C:\Users\alberto\Lattice\testNCO\SinCos.v"               verilog                      IN PROJECT

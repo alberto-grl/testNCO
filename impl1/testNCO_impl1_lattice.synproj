@@ -34,7 +34,9 @@
 -p "C:/Users/alberto/Lattice/testNCO"
 -ver "C:/Users/alberto/Lattice/testNCO/impl1/source/NCO.v"
 "C:/Users/alberto/Lattice/testNCO/impl1/source/top.v"
+"C:/Users/alberto/Lattice/testNCO/PLL.v"
 "C:/Users/alberto/Lattice/testNCO/PLL_TX.v"
+"C:/Users/alberto/Lattice/testNCO/SinCos.v"
 -top top
 
 

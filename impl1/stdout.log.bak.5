@@ -1,13 +1,34 @@
 Running in Lattice mode
 
-Starting:    C:\lscc\diamond\3.11_x64\synpbase\bin64\mbin\synbatch.exe
-Install:     C:\lscc\diamond\3.11_x64\synpbase
-Hostname:    DESKTOP-LI6GKLP
-Date:        Mon Oct 28 17:20:00 2024
-Version:     N-2018.03L-SP1-1
+                               Synplify Pro (R) 
 
-Arguments:   -product synplify_pro -batch testNCO_impl1_synplify.tcl
+                 Version V-2023.09L-2 for win64 - Sep 17, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Starting:    C:\lscc\diamond\3.14\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.14\synpbase
+Hostname:    DESKTOP-LI6GKLP
+Date:        Mon Oct 28 21:25:00 2024
+Version:     V-2023.09L-2
+
+Arguments:   -product synplify_base -batch testNCO_impl1_synplify.tcl
 ProductType: synplify_pro
+
 
 
 
@@ -18,62 +39,32 @@ Running: impl1 in foreground
 Running proj_1|impl1
 
 Running Flow: compile (Compile) on proj_1|impl1
-# Mon Oct 28 17:20:01 2024
+# Mon Oct 28 21:25:01 2024
 
 Running Flow: compile_flow (Compile Process) on proj_1|impl1
-# Mon Oct 28 17:20:01 2024
+# Mon Oct 28 21:25:01 2024
 
 Running: compiler (Compile Input) on proj_1|impl1
-# Mon Oct 28 17:20:01 2024
-Copied C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_comp.srs to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srs
+# Mon Oct 28 21:25:01 2024
+compiler exited with errors
+Job failed on: proj_1|impl1
 
-compiler completed
-# Mon Oct 28 17:20:02 2024
+Job: "compiler" terminated with error status: 2
+See log file: "C:\Users\alberto\Lattice\testNCO\impl1\synlog\testNCO_impl1_compiler.srr"
+# Mon Oct 28 21:25:01 2024
 
-Return Code: 0
-Run Time:00h:00m:01s
-
-Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl1
-# Mon Oct 28 17:20:02 2024
-
-multi_srs_gen completed
-# Mon Oct 28 17:20:02 2024
-
-Return Code: 0
+Return Code: 2
 Run Time:00h:00m:00s
-Copied C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_mult.srs to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srs
-Copied C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srr to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srf
 Complete: Compile Process on proj_1|impl1
-
-Running: premap (Premap) on proj_1|impl1
-# Mon Oct 28 17:20:02 2024
-
-premap completed with warnings
-# Mon Oct 28 17:20:03 2024
-
-Return Code: 1
-Run Time:00h:00m:01s
 Complete: Compile on proj_1|impl1
-
-Running Flow: map (Map) on proj_1|impl1
-# Mon Oct 28 17:20:03 2024
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on proj_1|impl1
-# Mon Oct 28 17:20:03 2024
-Copied C:\Users\alberto\Lattice\testNCO\impl1\synwork\testNCO_impl1_m.srm to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srm
-
-fpga_mapper completed with warnings
-# Mon Oct 28 17:20:05 2024
-
-Return Code: 1
-Run Time:00h:00m:02s
-Complete: Map on proj_1|impl1
-Copied C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srr to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srf
 Complete: Logic Synthesis on proj_1|impl1
+Copied C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srr to C:\Users\alberto\Lattice\testNCO\impl1\testNCO_impl1.srf
+Error: At line 68 while processing "testNCO_impl1_synplify.tcl"
+2
 TCL script complete: "testNCO_impl1_synplify.tcl"
-exit status=0
-exit status=0
+TCL script had errors: "testNCO_impl1_synplify.tcl"
+exit status=9
+exit status=9
 Save changes for project:
 C:\Users\alberto\Lattice\testNCO\impl1\proj_1.prj
 batch mode default:no

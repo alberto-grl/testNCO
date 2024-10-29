@@ -1,95 +1,160 @@
 Selecting top level module top
-@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1032:7:1032:9|Synthesizing module PUR in library work.
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1032:7:1032:9|Synthesizing module PUR in library work.
 Running optimization stage 1 on PUR .......
+Finished optimization stage 1 on PUR (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":563:7:563:9|Synthesizing module INV in library work.
+Running optimization stage 1 on INV .......
+Finished optimization stage 1 on INV (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1173:7:1173:10|Synthesizing module XOR2 in library work.
+Running optimization stage 1 on XOR2 .......
+Finished optimization stage 1 on XOR2 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
+Running optimization stage 1 on ROM16X1A .......
+Finished optimization stage 1 on ROM16X1A (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":43:7:43:10|Synthesizing module AND2 in library work.
+Running optimization stage 1 on AND2 .......
+Finished optimization stage 1 on AND2 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1291:7:1291:11|Synthesizing module DP8KC in library work.
+Running optimization stage 1 on DP8KC .......
+Finished optimization stage 1 on DP8KC (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+Running optimization stage 1 on FD1P3DX .......
+Finished optimization stage 1 on FD1P3DX (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":723:7:723:11|Synthesizing module MUX21 in library work.
+Running optimization stage 1 on MUX21 .......
+Finished optimization stage 1 on MUX21 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":138:7:138:12|Synthesizing module FADD2B in library work.
+Running optimization stage 1 on FADD2B .......
+Finished optimization stage 1 on FADD2B (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\alberto\Lattice\testNCO\SinCos.v":8:7:8:12|Synthesizing module SinCos in library work.
+Running optimization stage 1 on SinCos .......
+Finished optimization stage 1 on SinCos (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
 @N: CG364 :"C:\Users\alberto\Lattice\testNCO\impl1\source\NCO.v":13:7:13:13|Synthesizing module nco_sig in library work.
 Running optimization stage 1 on nco_sig .......
-@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
-Running optimization stage 1 on VLO .......
-@N: CG364 :"C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+Finished optimization stage 1 on nco_sig (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
 Running optimization stage 1 on EHXPLLJ .......
+Finished optimization stage 1 on EHXPLLJ (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
 @N: CG364 :"C:\Users\alberto\Lattice\testNCO\PLL.v":8:7:8:9|Synthesizing module PLL in library work.
 Running optimization stage 1 on PLL .......
+Finished optimization stage 1 on PLL (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
 @N: CG364 :"C:\Users\alberto\Lattice\testNCO\PLL_TX.v":8:7:8:12|Synthesizing module PLL_TX in library work.
 Running optimization stage 1 on PLL_TX .......
+Finished optimization stage 1 on PLL_TX (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
 @N: CG364 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":14:7:14:9|Synthesizing module top in library work.
 Running optimization stage 1 on top .......
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[63] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[62] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[61] is always 1.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[60] is always 1.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[59] is always 1.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[58] is always 1.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[57] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[56] is always 1.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[55] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[54] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[53] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[52] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[51] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[50] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[49] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[48] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[47] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[46] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[45] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[44] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[43] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[42] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[41] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[40] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[39] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[38] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[37] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[36] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[35] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[34] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[33] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[32] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[31] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[30] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[29] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[28] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[27] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[26] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[25] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[24] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[23] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[22] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[21] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[20] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[19] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[18] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[17] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[16] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[15] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[14] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[13] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[12] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[11] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[10] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[9] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[8] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[7] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[6] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[5] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[4] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[3] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[2] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[1] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen[0] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[63] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[62] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[61] is always 1.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[60] is always 1.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[59] is always 1.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[58] is always 1.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[57] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[56] is always 1.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[55] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[54] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[53] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[52] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[51] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[50] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[49] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[48] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[47] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[46] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[45] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[44] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[43] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[42] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[41] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[40] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[39] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[38] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[37] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[36] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[35] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[34] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[33] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[32] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[31] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[30] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[29] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[28] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[27] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[26] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[25] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[24] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[23] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[22] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[21] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[20] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[19] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[18] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[17] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[16] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[15] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[14] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[13] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[12] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[11] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[10] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[9] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[8] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[7] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[6] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[5] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[4] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[3] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[2] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[1] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen[0] is always 0.
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
 Running optimization stage 2 on top .......
-@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen1[0] is always 0.
-@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":64:0:64:5|Register bit phase_inc_carrGen1[56] is always 1.
+@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Pruning register bits 63 to 57 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Pruning register bits 55 to 1 of phase_inc_carrGen1[63:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen1[0] is always 0.
+@N: CL189 :"C:\Users\alberto\Lattice\testNCO\impl1\source\top.v":75:0:75:5|Register bit phase_inc_carrGen1[56] is always 1.
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
 Running optimization stage 2 on PLL_TX .......
+Finished optimization stage 2 on PLL_TX (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
 Running optimization stage 2 on PLL .......
+Finished optimization stage 2 on PLL (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
 Running optimization stage 2 on EHXPLLJ .......
-Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on EHXPLLJ (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
 Running optimization stage 2 on nco_sig .......
+Finished optimization stage 2 on nco_sig (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on SinCos .......
+Finished optimization stage 2 on SinCos (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on FADD2B .......
+Finished optimization stage 2 on FADD2B (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on MUX21 .......
+Finished optimization stage 2 on MUX21 (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on FD1P3DX .......
+Finished optimization stage 2 on FD1P3DX (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on DP8KC .......
+Finished optimization stage 2 on DP8KC (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on AND2 .......
+Finished optimization stage 2 on AND2 (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on ROM16X1A .......
+Finished optimization stage 2 on ROM16X1A (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on XOR2 .......
+Finished optimization stage 2 on XOR2 (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on INV .......
+Finished optimization stage 2 on INV (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
 Running optimization stage 2 on PUR .......
+Finished optimization stage 2 on PUR (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
 
-For a summary of runtime and memory usage per design unit, please see file:
+For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: C:\Users\alberto\Lattice\testNCO\impl1\synwork\layer0.rt.csv
+@L: C:\Users\alberto\Lattice\testNCO\impl1\synwork\layer0.duruntime
+
 

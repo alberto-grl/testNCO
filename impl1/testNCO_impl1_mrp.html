@@ -16,31 +16,31 @@
 Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
      testNCO_impl1.ngd -o testNCO_impl1_map.ncd -pr testNCO_impl1.prf -mp
      testNCO_impl1.mrp -lpf
-     C:/Users/alberto/Lattice/testNCO/impl1/testNCO_impl1_synplify.lpf -lpf
+     C:/Users/alberto/Lattice/testNCO/impl1/testNCO_impl1.lpf -lpf
      C:/Users/alberto/Lattice/testNCO/testNCO.lpf -c 0 -gui -msgset
      C:/Users/alberto/Lattice/testNCO/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
-Mapped on:  10/28/24  18:36:54
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  10/29/24  21:13:55
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:      8 out of  7209 (0%)
-      PFU registers:            8 out of  6864 (0%)
+   Number of registers:     27 out of  7209 (0%)
+      PFU registers:           27 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:         6 out of  3432 (0%)
-      SLICEs as Logic/ROM:      6 out of  3432 (0%)
+   Number of SLICEs:        29 out of  3432 (1%)
+      SLICEs as Logic/ROM:     29 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:          5 out of  3432 (0%)
-   Number of LUT4s:         12 out of  6864 (0%)
-      Number used as logic LUTs:          2
+      SLICEs as Carry:         11 out of  3432 (0%)
+   Number of LUT4s:         58 out of  6864 (1%)
+      Number used as logic LUTs:         36
       Number used as distributed RAM:     0
-      Number used as ripple logic:       10
+      Number used as ripple logic:       22
       Number used as shift registers:     0
-   Number of PIO sites used: 11 + 4(JTAG) out of 115 (13%)
-   Number of block RAMs:  0 out of 26 (0%)
+   Number of PIO sites used: 22 + 4(JTAG) out of 115 (23%)
+   Number of block RAMs:  2 out of 26 (8%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
    JTAG used :       No
@@ -64,26 +64,27 @@ Mapped on:  10/28/24  18:36:54
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  3
-     Net XIn_c: 1 loads, 1 rising, 0 falling (Driver: PIO XIn )
-     Net TX_NCO_c: 1 loads, 1 rising, 0 falling (Driver: ncoGen/phase_accum[63]
+   Number of clocks:  4
+     Net osc_clk: 5 loads, 5 rising, 0 falling (Driver: PLL1/PLLInst_0 )
+     Net TX_NCO_c_9: 1 loads, 1 rising, 0 falling (Driver:
 
-     )
-     Net osc_clk: 6 loads, 6 rising, 0 falling (Driver: PLL1/PLLInst_0 )
+     ncoGen/phase_accum_i63 )
+     Net XIn_c: 1 loads, 1 rising, 0 falling (Driver: PIO XIn )
+     Net clk_adc_c: 16 loads, 16 rising, 0 falling (Driver: clk_adc_9 )
    Number of Clock Enables:  0
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net VCC: 5 loads
-     Net TX_c: 2 loads
-     Net ncoGen/phase_accum[56]: 1 loads
-     Net ncoGen/phase_accum[57]: 1 loads
-     Net ncoGen/phase_accum[58]: 1 loads
-     Net ncoGen/phase_accum_1[57]: 1 loads
-     Net ncoGen/phase_accum_1[58]: 1 loads
-     Net ncoGen/phase_accum_1[63]: 1 loads
-     Net ncoGen/phase_accum_1_cry_0: 1 loads
-     Net ncoGen/phase_accum_i[56]: 1 loads
+     Net SinCos1/mx_ctrl_r: 17 loads
+     Net SinCos1/sinout_sel: 10 loads
+     Net SinCos1/sinromoutsel: 10 loads
+     Net phase_accum_60: 5 loads
+     Net phase_accum_61: 4 loads
+     Net phase_accum_62: 3 loads
+     Net SinCos1/rom_addr0_r_1: 3 loads
+     Net SinCos1/rom_addr0_r_2: 3 loads
+     Net SinCos1/rom_addr0_r_3: 3 loads
+     Net SinCos1/rom_addr0_r_4: 3 loads
 
 
 
@@ -109,26 +110,48 @@ Mapped on:  10/28/24  18:36:54
 +---------------------+-----------+-----------+------------+
 | MYLED[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| MYLED[1]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[4]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[2]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[5]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[3]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[6]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[2]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[4]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[7]           | OUTPUT    | LVCMOS25  |            |
+
++---------------------+-----------+-----------+------------+
+| LOSine[8]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[5]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[6]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LOSine[3]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MYLED[7]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | XIn                 | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | TX_NCO              | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| clk_adc             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | TX                  | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[7]            | OUTPUT    | LVCMOS25  |            |
+| LOSine[0]           | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[6]            | OUTPUT    | LVCMOS25  |            |
+| LOSine[1]           | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| MYLED[5]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| MYLED[4]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| MYLED[3]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| MYLED[2]            | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-
-| MYLED[1]            | OUTPUT    | LVCMOS25  |            |
+| LOSine[9]           | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 
@@ -136,55 +159,79 @@ Mapped on:  10/28/24  18:36:54
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block GSR_INST undriven or does not drive anything - clipped.
-Block ncoGen/VCC undriven or does not drive anything - clipped.
-Signal ncoGen/GND undriven or does not drive anything - clipped.
-Signal PLL1/GND undriven or does not drive anything - clipped.
-Signal PLL2/GND undriven or does not drive anything - clipped.
-Signal ncoGen/phase_accum_1_s_7_0_S1 undriven or does not drive anything -
+Signal SinCos1/mx_ctrl_r_inv was merged into signal SinCos1/mx_ctrl_r
+Signal SinCos1/lx_ne0_inv was merged into signal SinCos1/lx_ne0
+Signal SinCos1/rom_dob_inv was merged into signal SinCos1/rom_dob
+Signal SinCos1/rom_dob_1_inv was merged into signal SinCos1/rom_dob_1
+Signal SinCos1/rom_dob_2_inv was merged into signal SinCos1/rom_dob_2
+Signal SinCos1/rom_dob_3_inv was merged into signal SinCos1/rom_dob_3
+Signal SinCos1/rom_dob_4_inv was merged into signal SinCos1/rom_dob_4
+Signal SinCos1/rom_dob_5_inv was merged into signal SinCos1/rom_dob_5
+Signal SinCos1/rom_dob_6_inv was merged into signal SinCos1/rom_dob_6
+Signal SinCos1/rom_dob_7_inv was merged into signal SinCos1/rom_dob_7
+Signal SinCos1/rom_dob_8_inv was merged into signal SinCos1/rom_dob_8
+Signal SinCos1/rom_dob_9_inv was merged into signal SinCos1/rom_dob_9
+Signal SinCos1/rom_addr0_r_inv was merged into signal SinCos1/rom_addr0_r
+Signal SinCos1/rom_addr0_r_1_inv was merged into signal SinCos1/rom_addr0_r_1
+Signal SinCos1/rom_addr0_r_2_inv was merged into signal SinCos1/rom_addr0_r_2
+Signal SinCos1/rom_addr0_r_3_inv was merged into signal SinCos1/rom_addr0_r_3
+Signal SinCos1/rom_addr0_r_4_inv was merged into signal SinCos1/rom_addr0_r_4
+Signal SinCos1/rom_addr0_r_5_inv was merged into signal SinCos1/rom_addr0_r_5
+Signal SinCos1/rom_addr0_r_7_inv was merged into signal SinCos1/rom_addr0_r_7
+Signal SinCos1/rom_addr0_r_6_inv was merged into signal SinCos1/rom_addr0_r_6
+Signal n574 undriven or does not drive anything - clipped.
+Signal SinCos1/neg_rom_dob_n_5/S1 undriven or does not drive anything - clipped.
+     
+Signal SinCos1/neg_rom_dob_n_5/COUT undriven or does not drive anything -
      clipped.
-Signal ncoGen/phase_accum_1_s_7_0_COUT undriven or does not drive anything -
-     clipped.
-Signal ncoGen/phase_accum_1_cry_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal ncoGen/N_1 undriven or does not drive anything - clipped.
-Signal PLL1/CLKINTFB undriven or does not drive anything - clipped.
-Signal PLL1/DPHSRC undriven or does not drive anything - clipped.
-Signal PLL1/PLLACK undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO0 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO1 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO2 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO3 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO4 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO5 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO6 undriven or does not drive anything - clipped.
-Signal PLL1/PLLDATO7 undriven or does not drive anything - clipped.
-Signal PLL1/REFCLK undriven or does not drive anything - clipped.
-Signal PLL1/INTLOCK undriven or does not drive anything - clipped.
-Signal PLL1/LOCK undriven or does not drive anything - clipped.
-Signal PLL1/CLKOS3 undriven or does not drive anything - clipped.
-Signal PLL1/CLKOS2 undriven or does not drive anything - clipped.
-Signal PLL1/CLKOS undriven or does not drive anything - clipped.
-Signal PLL2/CLKINTFB_0 undriven or does not drive anything - clipped.
-Signal PLL2/DPHSRC_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLACK_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO0_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO1_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO2_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO3_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO4_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO5_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO6_0 undriven or does not drive anything - clipped.
-Signal PLL2/PLLDATO7_0 undriven or does not drive anything - clipped.
-Signal PLL2/REFCLK_0 undriven or does not drive anything - clipped.
-Signal PLL2/INTLOCK_0 undriven or does not drive anything - clipped.
-Signal PLL2/LOCK undriven or does not drive anything - clipped.
-Signal PLL2/CLKOS3_0 undriven or does not drive anything - clipped.
-Signal PLL2/CLKOS2_0 undriven or does not drive anything - clipped.
-Signal PLL2/CLKOS_0 undriven or does not drive anything - clipped.
-Block ncoGen/GND was optimized away.
-Block PLL1/GND was optimized away.
-Block PLL2/GND was optimized away.
+Signal SinCos1/neg_rom_dob_n_0/S0 undriven or does not drive anything - clipped.
 
+     
+Signal SinCos1/neg_rom_addr0_r_n_4/S1 undriven or does not drive anything -
+     clipped.
+Signal SinCos1/neg_rom_addr0_r_n_4/COUT undriven or does not drive anything -
+     clipped.
+Signal SinCos1/neg_rom_addr0_r_n_0/S0 undriven or does not drive anything -
+     clipped.
+Block SinCos1/INV_0 was optimized away.
+Block SinCos1/INV_1 was optimized away.
+Block SinCos1/INV_2 was optimized away.
+Block SinCos1/INV_3 was optimized away.
+Block SinCos1/INV_4 was optimized away.
+Block SinCos1/INV_5 was optimized away.
+Block SinCos1/INV_6 was optimized away.
+Block SinCos1/INV_7 was optimized away.
+Block SinCos1/INV_8 was optimized away.
+Block SinCos1/INV_9 was optimized away.
+Block SinCos1/INV_10 was optimized away.
+Block SinCos1/INV_11 was optimized away.
+Block SinCos1/INV_22 was optimized away.
+Block SinCos1/INV_23 was optimized away.
+Block SinCos1/INV_24 was optimized away.
+Block SinCos1/INV_25 was optimized away.
+Block SinCos1/INV_26 was optimized away.
+Block SinCos1/INV_27 was optimized away.
+Block SinCos1/INV_29 was optimized away.
+Block SinCos1/INV_28 was optimized away.
+Block m0_lut was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/SinCos1:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 25
+    PFU Registers: 22
+    -Contains EBR triglut_1_0_0_1:  TYPE= DP8KC,  Width_B= 9,  Depth_A= 256,
+         Depth_B= 256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= DISABLED,  MEM_INIT_FILE= ,  MEM_LPC_FILE= SinCos.lpc
+    -Contains EBR triglut_1_0_1_0:  TYPE= DP8KC,  Width_B= 1,  Depth_A= 256,
+         Depth_B= 256,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= DISABLED,  MEM_INIT_FILE= ,  MEM_LPC_FILE= SinCos.lpc
 
      
 
@@ -194,9 +241,85 @@ Block PLL2/GND was optimized away.
 ---------------
 
 PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                PLL1/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      XIn_c
+  Output Clock(P):                         NODE     osc_clk
+
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     osc_clk
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                       8.0000
+  Output Clock(P) Frequency (MHz):                  120.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    15
+
+  CLKOP Divider:                                    4
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+PLL 2:                                     Pin/Node Value
   PLL Instance Name:                                PLL2/PLLInst_0
   PLL Type:                                         EHXPLLJ
-  Input Clock:                             NODE     TX_NCO_c
+  Input Clock:                             NODE     TX_NCO_c_9
   Output Clock(P):                         PIN,NODE TX_c
   Output Clock(S):                                  NONE
   Output Clock(S2):                                 NONE
@@ -236,6 +359,7 @@ PLL 1:                                     Pin/Node Value
   PLL Data Out bus Data7:                           NONE
   Input Clock Frequency (MHz):                      22.0000
   Output Clock(P) Frequency (MHz):                  22.0000
+
   Output Clock(S) Frequency (MHz):                  NA
   Output Clock(S2) Frequency (MHz):                 NA
   Output Clock(S3) Frequency (MHz):                 NA
@@ -244,7 +368,6 @@ PLL 1:                                     Pin/Node Value
   CLKOS2 Post Divider C Input:                      DIVC
   CLKOS3 Post Divider D Input:                      DIVD
   Pre Divider A Input:                              VCO_PHASE
-
   Pre Divider B Input:                              VCO_PHASE
   Pre Divider C Input:                              VCO_PHASE
   Pre Divider D Input:                              VCO_PHASE
@@ -268,91 +391,20 @@ PLL 1:                                     Pin/Node Value
   CLKOS Trim Option Delay:                          0
   CLKOS2 Desired Phase Shift(degree):               0
   CLKOS3 Desired Phase Shift(degree):               0
-PLL 2:                                     Pin/Node Value
-  PLL Instance Name:                                PLL1/PLLInst_0
-  PLL Type:                                         EHXPLLJ
-  Input Clock:                             PIN      XIn_c
-  Output Clock(P):                         NODE     osc_clk
-  Output Clock(S):                                  NONE
-  Output Clock(S2):                                 NONE
-  Output Clock(S3):                                 NONE
-  Feedback Signal:                         NODE     osc_clk
-  Reset Signal:                                     NONE
-  M Divider Reset Signal:                           NONE
-  C Divider Reset Signal:                           NONE
-  D Divider Reset Signal:                           NONE
-  Standby Signal:                                   NONE
-  PLL LOCK signal:                                  NONE
-  PLL Data bus CLK Signal:                          NONE
-  PLL Data bus Strobe Signal:                       NONE
-  PLL Data bus Reset Signal:                        NONE
-  PLL Data bus Write Enable Signal:                 NONE
-  PLL Data bus Address0:                            NONE
-  PLL Data bus Address1:                            NONE
-  PLL Data bus Address2:                            NONE
-  PLL Data bus Address3:                            NONE
-  PLL Data bus Address4:                            NONE
-  PLL Data In bus Data0:                            NONE
-  PLL Data In bus Data1:                            NONE
-  PLL Data In bus Data2:                            NONE
-  PLL Data In bus Data3:                            NONE
-  PLL Data In bus Data4:                            NONE
-  PLL Data In bus Data5:                            NONE
-  PLL Data In bus Data6:                            NONE
-  PLL Data In bus Data7:                            NONE
-  PLL Data bus Acknowledge:                         NONE
-
-  PLL Data Out bus Data0:                           NONE
-  PLL Data Out bus Data1:                           NONE
-  PLL Data Out bus Data2:                           NONE
-  PLL Data Out bus Data3:                           NONE
-  PLL Data Out bus Data4:                           NONE
-  PLL Data Out bus Data5:                           NONE
-  PLL Data Out bus Data6:                           NONE
-  PLL Data Out bus Data7:                           NONE
-  Input Clock Frequency (MHz):                       8.0000
-  Output Clock(P) Frequency (MHz):                  120.0000
-  Output Clock(S) Frequency (MHz):                  NA
-  Output Clock(S2) Frequency (MHz):                 NA
-  Output Clock(S3) Frequency (MHz):                 NA
-  CLKOP Post Divider A Input:                       DIVA
-  CLKOS Post Divider B Input:                       DIVB
-  CLKOS2 Post Divider C Input:                      DIVC
-  CLKOS3 Post Divider D Input:                      DIVD
-  Pre Divider A Input:                              VCO_PHASE
-  Pre Divider B Input:                              VCO_PHASE
-  Pre Divider C Input:                              VCO_PHASE
-  Pre Divider D Input:                              VCO_PHASE
-  VCO Bypass A Input:                               VCO_PHASE
-  VCO Bypass B Input:                               VCO_PHASE
-  VCO Bypass C Input:                               VCO_PHASE
-  VCO Bypass D Input:                               VCO_PHASE
-  FB_MODE:                                          CLKOP
-  CLKI Divider:                                     1
-  CLKFB Divider:                                    15
-  CLKOP Divider:                                    4
-  CLKOS Divider:                                    1
-  CLKOS2 Divider:                                   1
-  CLKOS3 Divider:                                   1
-  Fractional N Divider:                             0
-  CLKOP Desired Phase Shift(degree):                0
-  CLKOP Trim Option Rising/Falling:                 RISING
-  CLKOP Trim Option Delay:                          0
-  CLKOS Desired Phase Shift(degree):                0
-  CLKOS Trim Option Rising/Falling:                 FALLING
-  CLKOS Trim Option Delay:                          0
-  CLKOS2 Desired Phase Shift(degree):               0
-  CLKOS3 Desired Phase Shift(degree):               0
 
 
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: PLL2/PLLInst_0
-         Type: EHXPLLJ
 Instance Name: PLL1/PLLInst_0
          Type: EHXPLLJ
+Instance Name: PLL2/PLLInst_0
+         Type: EHXPLLJ
+Instance Name: SinCos1/triglut_1_0_0_1
+         Type: DP8KC
+Instance Name: SinCos1/triglut_1_0_1_0
+         Type: DP8KC
 
 
 
@@ -361,59 +413,8 @@ Instance Name: PLL1/PLLInst_0
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 58 MB
-
+   Peak Memory Usage: 59 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -426,7 +427,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
      reserved.
 
 

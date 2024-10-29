@@ -1,1 +1,2 @@
-ckid0_0:@|S:PLL1.PLLInst_0.CLKOP@|E:ncoGen.phase_accum[63:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:PLL1.PLLInst_0.CLKOP@|E:clk_adc@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_3:@|S:clk_adc.Q[0]@|E:SinCos1.triglut_1_0_0_1@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3

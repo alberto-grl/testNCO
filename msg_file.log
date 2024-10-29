@@ -1,29 +1,33 @@
-SCUBA, Version Diamond (64-bit) 3.11.0.396.4
-Mon Oct 28 17:03:13 2024
+SCUBA, Version Diamond (64-bit) 3.14.0.75.2
+Mon Oct 28 21:21:52 2024
   
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
   
 BEGIN SCUBA Module Synthesis
   
-    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n PLL_TX -lang verilog -synth synplify -arch xo2c00 -type pll -fin 22 -fclkop 22 -fclkop_tol 0.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 
-    Circuit name     : PLL_TX
-    Module type      : pll
-    Module Version   : 5.7
+    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n SinCos -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 10 -width 10 -input_reg -mode 2 -output_reg -area -pipeline 1 
+    Circuit name     : SinCos
+    Module type      : cosine
+    Module Version   : 1.6
     Ports            : 
-    Inputs       : CLKI
-    Outputs      : CLKOP
+    Inputs       : Clock, ClkEn, Reset, Theta[9:0]
+    Outputs      : Sine[9:0], Cosine[9:0]
     I/O buffer       : not inserted
-    EDIF output      : PLL_TX.edn
-    Verilog output   : PLL_TX.v
-    Verilog template : PLL_TX_tmpl.v
+    EDIF output      : SinCos.edn
+    Verilog output   : SinCos.v
+    Verilog template : SinCos_tmpl.v
+    Verilog testbench: tb_SinCos_tmpl.v
     Verilog purpose  : for synthesis and simulation
     Bus notation     : big endian
-    Report output    : PLL_TX.srp
+    Report output    : SinCos.srp
     Estimated Resource Usage:
+            LUT : 96
+            EBR : 2
+            Reg : 34
   
 END   SCUBA Module Synthesis
 

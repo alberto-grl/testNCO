@@ -1,3 +1,15 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Oct 29 21:13:54 2024
+
+
+Command Line:  synthesis -f testNCO_impl1_lattice.synproj -gui -msgset C:/Users/alberto/Lattice/testNCO/promote.xml 
+
 Synthesis options:
 The -a option is MachXO2.
 The -s option is 4.
@@ -55,7 +67,9 @@ The -syn option is FALSE.
 -p C:/Users/alberto/Lattice/testNCO (searchpath added)
 Verilog design file = C:/Users/alberto/Lattice/testNCO/impl1/source/NCO.v
 Verilog design file = C:/Users/alberto/Lattice/testNCO/impl1/source/top.v
+Verilog design file = C:/Users/alberto/Lattice/testNCO/PLL.v
 Verilog design file = C:/Users/alberto/Lattice/testNCO/PLL_TX.v
+Verilog design file = C:/Users/alberto/Lattice/testNCO/SinCos.v
 NGD file = testNCO_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -68,13 +82,31 @@ Compile design.
 Compile Design Begin
 Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/nco.v. VERI-1482
 Analyzing Verilog file c:/users/alberto/lattice/testnco/impl1/source/top.v. VERI-1482
+WARNING - synthesis: c:/users/alberto/lattice/testnco/impl1/source/top.v(28): redeclaration of ansi port clk_adc is not allowed. VERI-1372
+Analyzing Verilog file c:/users/alberto/lattice/testnco/pll.v. VERI-1482
 Analyzing Verilog file c:/users/alberto/lattice/testnco/pll_tx.v. VERI-1482
+Analyzing Verilog file c:/users/alberto/lattice/testnco/sincos.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): top
 INFO - synthesis: c:/users/alberto/lattice/testnco/impl1/source/top.v(14): compiling module top. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1032): compiling module PUR. VERI-1018
+INFO - synthesis: c:/users/alberto/lattice/testnco/sincos.v(8): compiling module SinCos. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1173): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): compiling module ROM16X1A(initval=16'b1111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): compiling module DP8KC(RESETMODE="ASYNC"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): compiling module MUX21. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): compiling module FADD2B. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
 INFO - synthesis: c:/users/alberto/lattice/testnco/impl1/source/nco.v(13): compiling module nco_sig. VERI-1018
-WARNING - synthesis: c:/users/alberto/lattice/testnco/impl1/source/top.v(57): instantiating unknown module PLL. VERI-1063
+INFO - synthesis: c:/users/alberto/lattice/testnco/pll.v(8): compiling module PLL. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=15,CLKOP_DIV=4,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=3,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: c:/users/alberto/lattice/testnco/pll_tx.v(8): compiling module PLL_TX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOP_DIV=24,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=23,CLKOS_TRIM_POL="FALLING"). VERI-1018
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -83,9 +115,9 @@ Loading device for application map from file 'xo2c7000.nph' in environment: C:/l
 Package Status:                     Final          Version 1.39.
 Top-level module name = top.
 WARNING - synthesis: Bit 7 of Register phase_inc_carrGen is stuck at Zero
-WARNING - synthesis: Bit 6 of Register phase_inc_carrGen is stuck at One
-WARNING - synthesis: Bit 5 of Register phase_inc_carrGen is stuck at Zero
-WARNING - synthesis: Bit 4 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 6 of Register phase_inc_carrGen is stuck at Zero
+WARNING - synthesis: Bit 5 of Register phase_inc_carrGen is stuck at One
+WARNING - synthesis: Bit 4 of Register phase_inc_carrGen is stuck at One
 WARNING - synthesis: Bit 3 of Register phase_inc_carrGen is stuck at Zero
 WARNING - synthesis: Bit 2 of Register phase_inc_carrGen is stuck at Zero
 WARNING - synthesis: Bit 1 of Register phase_inc_carrGen is stuck at Zero
@@ -147,9 +179,9 @@ WARNING - synthesis: Bit 2 of Register phase_inc_carrGen is stuck at Zero
 WARNING - synthesis: Bit 1 of Register phase_inc_carrGen is stuck at Zero
 WARNING - synthesis: Bit 0 of Register phase_inc_carrGen is stuck at Zero
 WARNING - synthesis: Bit 63 of Register phase_inc_carrGen1 is stuck at Zero
-WARNING - synthesis: Bit 62 of Register phase_inc_carrGen1 is stuck at One
-WARNING - synthesis: Bit 61 of Register phase_inc_carrGen1 is stuck at Zero
-WARNING - synthesis: Bit 60 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register phase_inc_carrGen1 is stuck at Zero
+WARNING - synthesis: Bit 61 of Register phase_inc_carrGen1 is stuck at One
+WARNING - synthesis: Bit 60 of Register phase_inc_carrGen1 is stuck at One
 WARNING - synthesis: Bit 59 of Register phase_inc_carrGen1 is stuck at Zero
 WARNING - synthesis: Bit 58 of Register phase_inc_carrGen1 is stuck at Zero
 WARNING - synthesis: Bit 57 of Register phase_inc_carrGen1 is stuck at Zero
@@ -213,9 +245,81 @@ WARNING - synthesis: Bit 0 of Register phase_inc_carrGen1 is stuck at Zero
 
 
 
-WARNING - synthesis: c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): Register \ncoGen/phase_accum_i0 is stuck at Zero. VDB-5013
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/data/neoprims.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/data/neomacro.ngl'...
+WARNING - synthesis: c:/users/alberto/lattice/testnco/impl1/source/nco.v(35): Register \ncoGen/phase_accum_i28 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_28.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
+Duplicate register/latch removal. \SinCos1/FF_32 is a one-to-one match with \SinCos1/FF_33.
+Duplicate register/latch removal. \SinCos1/FF_31 is a one-to-one match with \SinCos1/FF_32.
+Duplicate register/latch removal. \SinCos1/FF_29 is a one-to-one match with \SinCos1/FF_31.
+Duplicate register/latch removal. \SinCos1/FF_30 is a one-to-one match with \SinCos1/FF_29.
+Duplicate register/latch removal. \SinCos1/FF_28 is a one-to-one match with \SinCos1/FF_30.
 Applying 100.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -224,6 +328,76 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/data/neoprims.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/data/neomacro.ngl'...
-ERROR - synthesis: logical block 'PLL_TX' with type 'PLL' is unexpanded.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file testNCO_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 27 of 7209 (0 % )
+AND2 => 1
+DP8KC => 2
+EHXPLLJ => 2
+FADD2B => 11
+FD1P3DX => 22
+FD1S3AX => 5
+GSR => 1
+IB => 1
+INV => 20
+LUT4 => 6
+MUX21 => 36
+OB => 21
+PUR => 1
+ROM16X1A => 3
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : clk_adc_c, loads : 28
+  Net : osc_clk, loads : 6
+  Net : ncoGen/TX_NCO_c_9, loads : 4
+  Net : XIn_c, loads : 1
+  Net : PLL2/TX_c, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : SinCos1/mx_ctrl_r, loads : 17
+  Net : SinCos1/sinromoutsel, loads : 10
+  Net : SinCos1/sinout_sel, loads : 10
+  Net : n574, loads : 6
+  Net : ncoGen/phase_accum_60, loads : 4
+  Net : ncoGen/phase_accum_61, loads : 3
+  Net : SinCos1/rom_addr0_r_1, loads : 3
+  Net : SinCos1/rom_addr0_r_2, loads : 3
+  Net : SinCos1/rom_addr0_r_4, loads : 3
+  Net : SinCos1/rom_addr0_r_3, loads : 3
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 10.000000 -name    |             |             |
+clk1 [get_nets clk_adc_c]               |  100.000 MHz|   53.778 MHz|    10 *
+                                        |             |             |
+create_clock -period 10.000000 -name    |             |             |
+clk0 [get_nets osc_clk]                 |  100.000 MHz|  285.714 MHz|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 59.785  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.828  secs
+--------------------------------------------------------------

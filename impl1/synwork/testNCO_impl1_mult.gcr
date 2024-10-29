@@ -1,8 +1,16 @@
 i PLL1.CLKOP_i
 m 0 0
-u 1 64
-n ckid0_0 {t:ncoGen.phase_accum[63:0].C} Black box on clock path
-p {t:PLL1.PLLInst_0.CLKOP}{t:PLL1.CLKOP_inferred_clock.I[0]}{t:PLL1.CLKOP_inferred_clock.OUT[0]}{p:PLL1.CLKOP}{t:PLL1.CLKOP}{t:ncoGen.clk}{p:ncoGen.clk}{t:ncoGen.phase_accum[63:0].C}
-e ckid0_0 {t:ncoGen.phase_accum[63:0].C} dff
-d ckid0_0 {t:PLL1.PLLInst_0.CLKOP} EHXPLLJ Black box on clock path
-l 0 0 0 0 0
+u 3 66
+n ckid0_0 {t:ncoGen.phase_accum[63:0].C} Clock source is invalid for GCC
+p {t:PLL1.PLLInst_0.CLKOP}{t:PLL1.CLKOP_inferred_clock.I[0]}{t:PLL1.CLKOP_inferred_clock.OUT[0]}{p:PLL1.CLKOP}{t:PLL1.CLKOP}{t:clk_adc.C}
+e ckid0_1 {t:clk_adc.C} dffe
+d ckid0_2 {t:PLL1.PLLInst_0.CLKOP} EHXPLLJ Clock source is invalid for GCC
+i clk_adc_i
+m 0 0
+u 26 26
+n ckid0_3 {t:SinCos1.triglut_1_0_0_1.CLKA} Derived clock on input (not legal for GCC)
+p {t:clk_adc.Q[0]}{t:clk_adc_derived_clock.I[0]}{t:clk_adc_derived_clock.OUT[0]}{t:SinCos1.Clock}{p:SinCos1.Clock}{t:SinCos1.triglut_1_0_0_1.CLKA}
+e ckid0_3 {t:SinCos1.triglut_1_0_0_1.CLKA} DP8KC
+d ckid0_4 {t:clk_adc.Q[0]} dffe Derived clock on input (not legal for GCC)
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

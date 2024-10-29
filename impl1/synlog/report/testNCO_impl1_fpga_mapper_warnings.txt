@@ -1,2 +1,8 @@
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net clk_adc has multiple drivers .
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net osc_clk has multiple drivers .
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net N_7 has multiple drivers .
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net ncoGen.phase_accum_1_axb_1 has multiple drivers .
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net ncoGen.phase_accum_1_axb_6 has multiple drivers .
+@W: BN161 :"c:\users\alberto\lattice\testnco\impl1\source\top.v":14:7:14:9|Net ncoGen.phase_accum_1_axb_7 has multiple drivers .
 @W: MT246 :"c:\users\alberto\lattice\testnco\pll_tx.v":64:12:64:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock PLL|CLKOP_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PLL1.osc_clk.

@@ -1,9 +1,10 @@
 #
-# Logical Preferences generated for Lattice by Synplify maplat2018q2p1, Build 055R.
+# Logical Preferences generated for Lattice by Synplify map202309lat, Build 191R.
 #
 
 # Period Constraints 
 #FREQUENCY NET "PLL1/osc_clk" 100.0 MHz;
+#FREQUENCY NET "clk_adc" 100.0 MHz;
 
 
 # Output Constraints 
@@ -12,6 +13,8 @@
 
 # Point-to-point Delay Constraints 
 
+#MULTICYCLE FROM CLKNET "clk_adc"  TO CLKNET "clk_adc"  2X;
+#MULTICYCLE FROM CLKNET "clk_adc"  TO CLKNET "clk_adc"  1X;
 
 
 # Block Path Constraints 

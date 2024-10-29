@@ -1,44 +1,49 @@
 
-Copyright (C) 1994-2018 Synopsys, Inc.
+Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
 and may only be used pursuant to the terms and conditions of a written license agreement
 with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
-Build: N-2018.03L-SP1-1
-Install: C:\lscc\diamond\3.11_x64\synpbase
-OS: Windows 6.2
-
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
 Hostname: DESKTOP-LI6GKLP
 
 Implementation : impl1
-Synopsys HDL compiler and linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+Synopsys HDL compiler and linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
-Modified Files: 0
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
+11       C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 5
 MID:  lib.cell.view
+2        work.PLL.verilog may have changed because the following files changed:
+                        C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41) <-- (may instantiate this module)
+3        work.PLL_TX.verilog may have changed because the following files changed:
+                        C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41) <-- (may instantiate this module)
+4        work.SinCos.verilog may have changed because the following files changed:
+                        C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41) <-- (may instantiate this module)
+0        work.nco_sig.verilog may have changed because the following files changed:
+                        C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41) <-- (may instantiate this module)
+1        work.top.verilog may have changed because the following files changed:
+                        C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 22:07:27, 2024-10-28 22:18:41) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 10
+Unmodified files: 9
 FID:  path (timestamp)
 9        C:\Users\alberto\Lattice\testNCO\PLL.v (2024-10-27 17:48:11)
 12       C:\Users\alberto\Lattice\testNCO\PLL_TX.v (2024-10-28 17:03:13)
+18       C:\Users\alberto\Lattice\testNCO\SinCos.v (2024-10-28 21:21:52)
 10       C:\Users\alberto\Lattice\testNCO\impl1\source\NCO.v (2024-10-27 15:36:28)
-11       C:\Users\alberto\Lattice\testNCO\impl1\source\top.v (2024-10-28 17:33:35)
-2        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\machxo2.v (2019-04-01 10:08:08)
-3        C:\lscc\diamond\3.11_x64\synpbase\lib\lucent\pmi_def.v (2019-04-01 10:08:08)
-4        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\hypermods.v (2019-04-01 10:07:44)
-5        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_objects.v (2019-04-01 10:07:44)
-6        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\scemi_pipes.svh (2019-04-01 10:07:44)
-7        C:\lscc\diamond\3.11_x64\synpbase\lib\vlog\umr_capim.v (2019-04-01 10:07:44)
+13       C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo2.v (2024-09-17 08:02:13)
+14       C:\lscc\diamond\3.14\synpbase\lib\lucent\pmi_def.v (2024-09-24 01:33:10)
+15       C:\lscc\diamond\3.14\synpbase\lib\vlog\hypermods.v (2024-09-24 01:33:35)
+16       C:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_objects.v (2024-09-24 01:33:35)
+17       C:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_pipes.svh (2024-09-24 01:33:35)
 
 *******************************************************************
-Unchanged modules: 4
+Unchanged modules: 0
 MID:  lib.cell.view
-2        work.PLL.verilog
-3        work.PLL_TX.verilog
-0        work.nco_sig.verilog
-1        work.top.verilog

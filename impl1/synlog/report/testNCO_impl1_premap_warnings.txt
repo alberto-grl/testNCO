@@ -1,1 +1,4 @@
-@W: MT529 :"c:\users\alberto\lattice\testnco\impl1\source\nco.v":33:0:33:5|Found inferred clock PLL|CLKOP_inferred_clock which controls 64 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: BZ204 :"c:\users\alberto\lattice\testnco\pll.v":64:12:64:20|GCC unable to propagate clocks through gate PLL1.PLLInst_0; all outputs will be treated as enables regardless of whether any inputs are clocks
+@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data PLL1.CLKOP; this will likely lead to failure to convert
+@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data clk_adc; this will likely lead to failure to convert
+@W: MT529 :"c:\users\alberto\lattice\testnco\impl1\source\nco.v":33:0:33:5|Found inferred clock PLL|CLKOP_inferred_clock which controls 66 sequential elements including ncoGen.phase_accum[63:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,19 +1,30 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Mon Oct 28 18:37:30 2024 *
+NOTE DATE CREATED: Tue Oct 29 21:14:26 2024 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS MYLED[0] : 97 : out *
+NOTE PINS MYLED[1] : 98 : out *
+NOTE PINS LOSine[4] : 26 : out *
+NOTE PINS MYLED[2] : 99 : out *
+NOTE PINS LOSine[5] : 22 : out *
+NOTE PINS MYLED[3] : 100 : out *
+NOTE PINS LOSine[6] : 142 : out *
+NOTE PINS LOSine[2] : 19 : out *
+NOTE PINS MYLED[4] : 104 : out *
+NOTE PINS LOSine[7] : 143 : out *
+NOTE PINS LOSine[8] : 23 : out *
+NOTE PINS MYLED[5] : 105 : out *
+NOTE PINS MYLED[6] : 106 : out *
+NOTE PINS LOSine[3] : 20 : out *
+NOTE PINS MYLED[7] : 107 : out *
 NOTE PINS XIn : 3 : in *
 NOTE PINS TX_NCO : 42 : out *
+NOTE PINS clk_adc : 87 : out *
 NOTE PINS TX : 44 : out *
-NOTE PINS MYLED[7] : 107 : out *
-NOTE PINS MYLED[6] : 106 : out *
-NOTE PINS MYLED[5] : 105 : out *
-NOTE PINS MYLED[4] : 104 : out *
-NOTE PINS MYLED[3] : 100 : out *
-NOTE PINS MYLED[2] : 99 : out *
-NOTE PINS MYLED[1] : 98 : out *
+NOTE PINS LOSine[0] : 21 : out *
+NOTE PINS LOSine[1] : 24 : out *
+NOTE PINS LOSine[9] : 25 : out *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

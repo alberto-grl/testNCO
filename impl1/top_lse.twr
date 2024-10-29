@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Mon Oct 28 09:04:55 2024
+Tue Oct 29 21:13:55 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,9 +18,227 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 10.000000 -name clk0 [get_nets TX_c]
-            0 items scored, 0 timing errors detected.
+Constraint: create_clock -period 10.000000 -name clk1 [get_nets clk_adc_c]
+            366 items scored, 118 timing errors detected.
 --------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.595ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKB           \SinCos1/triglut_1_0_0_1  (from clk_adc_c +)
+   Destination:    FD1P3DX    D              \SinCos1/FF_10  (to clk_adc_c +)
+
+   Delay:                  18.435ns  (47.9% logic, 52.1% route), 10 logic levels.
+
+ Constraint Details:
+
+     18.435ns data_path \SinCos1/triglut_1_0_0_1 to \SinCos1/FF_10 violates
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 8.595ns
+
+ Path Details: \SinCos1/triglut_1_0_0_1 to \SinCos1/FF_10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.908           CLKB to DOB[9]         \SinCos1/triglut_1_0_0_1 (from clk_adc_c)
+Route         2   e 1.141                                  \SinCos1/rom_dob
+LUT4        ---     0.493              A to Z              \SinCos1/INV_2
+Route         1   e 0.941                                  \SinCos1/rom_dob_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_0
+Route         1   e 0.941                                  \SinCos1/co0_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_1
+Route         1   e 0.941                                  \SinCos1/co1_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_2
+Route         1   e 0.941                                  \SinCos1/co2_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_3
+Route         1   e 0.941                                  \SinCos1/rom_dob_7_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_4
+Route         1   e 0.941                                  \SinCos1/rom_dob_9_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_5
+Route         1   e 0.941                                  \SinCos1/rom_dob_n_9
+MUXL5       ---     0.233             D1 to Z              \SinCos1/muxb_30
+Route         1   e 0.941                                  \SinCos1/rom_dob_19
+MUXL5       ---     0.233             D0 to Z              \SinCos1/muxb_0
+Route         1   e 0.941                                  \SinCos1/sinout_pre_9
+                  --------
+                   18.435  (47.9% logic, 52.1% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 7.950ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \SinCos1/FF_33  (from clk_adc_c +)
+   Destination:    FD1P3DX    D              \SinCos1/FF_20  (to clk_adc_c +)
+
+   Delay:                  17.790ns  (31.5% logic, 68.5% route), 12 logic levels.
+
+ Constraint Details:
+
+     17.790ns data_path \SinCos1/FF_33 to \SinCos1/FF_20 violates
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 7.950ns
+
+ Path Details: \SinCos1/FF_33 to \SinCos1/FF_20
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \SinCos1/FF_33 (from clk_adc_c)
+Route         3   e 1.315                                  \SinCos1/rom_addr0_r
+LUT4        ---     0.493              A to Z              \SinCos1/INV_22
+Route         1   e 0.941                                  \SinCos1/rom_addr0_r_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_addr0_r_n_0
+Route         2   e 0.941                                  \SinCos1/co0
+LUT4        ---     0.493                to                \SinCos1/neg_rom_addr0_r_n_1
+Route         2   e 0.941                                  \SinCos1/rom_addr0_r_4_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_addr0_r_n_2
+Route         2   e 0.941                                  \SinCos1/co2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_addr0_r_n_3
+Route         2   e 0.941                                  \SinCos1/co3
+LUT4        ---     0.493                to                \SinCos1/neg_rom_addr0_r_n_4
+Route         2   e 1.141                                  \SinCos1/rom_addr0_r_n_7
+MUXL5       ---     0.233             D1 to Z              \SinCos1/muxb_48
+Route         3   e 1.258                                  \SinCos1/rom_addr0_r_15
+LUT4        ---     0.493          AD[4] to DO0            \SinCos1/LUT4_1
+Route         1   e 0.941                                  \SinCos1/func_or_inet_1
+LUT4        ---     0.493          AD[4] to DO0            \SinCos1/LUT4_0
+Route         1   e 0.941                                  \SinCos1/lx_ne0
+LUT4        ---     0.493              A to Z              \SinCos1/INV_1
+Route         1   e 0.941                                  \SinCos1/lx_ne0_inv
+LUT4        ---     0.493              B to Z              \SinCos1/AND2_t1
+Route         1   e 0.941                                  \SinCos1/sinout_sel_i
+                  --------
+                   17.790  (31.5% logic, 68.5% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 7.161ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKB           \SinCos1/triglut_1_0_0_1  (from clk_adc_c +)
+   Destination:    FD1P3DX    D              \SinCos1/FF_12  (to clk_adc_c +)
+
+   Delay:                  17.001ns  (49.0% logic, 51.0% route), 9 logic levels.
+
+ Constraint Details:
+
+     17.001ns data_path \SinCos1/triglut_1_0_0_1 to \SinCos1/FF_12 violates
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 7.161ns
+
+ Path Details: \SinCos1/triglut_1_0_0_1 to \SinCos1/FF_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.908           CLKB to DOB[9]         \SinCos1/triglut_1_0_0_1 (from clk_adc_c)
+Route         2   e 1.141                                  \SinCos1/rom_dob
+LUT4        ---     0.493              A to Z              \SinCos1/INV_2
+Route         1   e 0.941                                  \SinCos1/rom_dob_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_0
+Route         1   e 0.941                                  \SinCos1/co0_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_1
+Route         1   e 0.941                                  \SinCos1/co1_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_2
+Route         1   e 0.941                                  \SinCos1/co2_2
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_3
+Route         1   e 0.941                                  \SinCos1/rom_dob_7_inv
+LUT4        ---     0.493                to                \SinCos1/neg_rom_dob_n_4
+Route         1   e 0.941                                  \SinCos1/rom_dob_n_7
+MUXL5       ---     0.233             D1 to Z              \SinCos1/muxb_32
+Route         1   e 0.941                                  \SinCos1/rom_dob_17
+MUXL5       ---     0.233             D0 to Z              \SinCos1/muxb_4
+Route         1   e 0.941                                  \SinCos1/sinout_pre_7
+                  --------
+                   17.001  (49.0% logic, 51.0% route), 9 logic levels.
+
+Warning: 18.595 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 10.000000 -name clk0 [get_nets osc_clk]
+            11 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 6.500ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ncoGen/phase_accum_i60  (from osc_clk +)
+   Destination:    FD1S3AX    D              \ncoGen/phase_accum_i61  (to osc_clk +)
+
+   Delay:                   3.340ns  (28.1% logic, 71.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.340ns data_path \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i61 meets
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 6.500ns
+
+ Path Details: \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i61
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ncoGen/phase_accum_i60 (from osc_clk)
+Route         5   e 1.462                                  phase_accum[60]
+LUT4        ---     0.493              B to Z              \ncoGen/i1_2_lut
+Route         1   e 0.941                                  \ncoGen/phase_accum_63__N_3[61]
+                  --------
+                    3.340  (28.1% logic, 71.9% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 6.500ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ncoGen/phase_accum_i60  (from osc_clk +)
+   Destination:    FD1S3AX    D              \ncoGen/phase_accum_i62  (to osc_clk +)
+
+   Delay:                   3.340ns  (28.1% logic, 71.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.340ns data_path \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i62 meets
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 6.500ns
+
+ Path Details: \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i62
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ncoGen/phase_accum_i60 (from osc_clk)
+Route         5   e 1.462                                  phase_accum[60]
+LUT4        ---     0.493              B to Z              \ncoGen/i45_2_lut_3_lut
+Route         1   e 0.941                                  \ncoGen/phase_accum_63__N_3[62]
+                  --------
+                    3.340  (28.1% logic, 71.9% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 6.500ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \ncoGen/phase_accum_i60  (from osc_clk +)
+   Destination:    FD1S3AX    D              \ncoGen/phase_accum_i63  (to osc_clk +)
+
+   Delay:                   3.340ns  (28.1% logic, 71.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.340ns data_path \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i63 meets
+     10.000ns delay constraint less
+      0.160ns L_S requirement (totaling 9.840ns) by 6.500ns
+
+ Path Details: \ncoGen/phase_accum_i60 to \ncoGen/phase_accum_i63
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ncoGen/phase_accum_i60 (from osc_clk)
+Route         5   e 1.462                                  phase_accum[60]
+LUT4        ---     0.493              B to Z              \ncoGen/i52_3_lut_4_lut
+Route         1   e 0.941                                  \ncoGen/phase_accum_63__N_3[63]
+                  --------
+                    3.340  (28.1% logic, 71.9% route), 2 logic levels.
+
+Report: 3.500 ns is the maximum delay for this constraint.
+
 
 Timing Report Summary
 --------------
@@ -29,22 +247,63 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 10.000000 -name    |             |             |
-clk0 [get_nets TX_c]                    |            -|            -|     0  
+clk1 [get_nets clk_adc_c]               |    10.000 ns|    18.595 ns|    10 *
+                                        |             |             |
+create_clock -period 10.000000 -name    |             |             |
+clk0 [get_nets osc_clk]                 |    10.000 ns|     3.500 ns|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\SinCos1/rom_addr0_r_4_inv              |       1|      45|     38.14%
+                                        |        |        |
+\SinCos1/co0                            |       1|      41|     34.75%
+                                        |        |        |
+\SinCos1/co2                            |       1|      41|     34.75%
+                                        |        |        |
+\SinCos1/lx_ne0                         |       1|      39|     33.05%
+                                        |        |        |
+\SinCos1/lx_ne0_inv                     |       1|      39|     33.05%
+                                        |        |        |
+\SinCos1/sinout_sel_i                   |       1|      39|     33.05%
+                                        |        |        |
+\SinCos1/co1_2                          |       1|      35|     29.66%
+                                        |        |        |
+\SinCos1/co2_2                          |       1|      35|     29.66%
+                                        |        |        |
+\SinCos1/co0_2                          |       1|      27|     22.88%
+                                        |        |        |
+\SinCos1/func_or_inet_1                 |       1|      27|     22.88%
+                                        |        |        |
+\SinCos1/rom_dob_7_inv                  |       1|      27|     22.88%
+                                        |        |        |
+\SinCos1/co3                            |       1|      20|     16.95%
+                                        |        |        |
+\SinCos1/rom_addr0_r                    |       3|      20|     16.95%
+                                        |        |        |
+\SinCos1/rom_addr0_r_inv                |       1|      20|     16.95%
+                                        |        |        |
+\SinCos1/rom_addr0_r_n_7                |       2|      20|     16.95%
+                                        |        |        |
+\SinCos1/rom_addr0_r_15                 |       3|      14|     11.86%
+                                        |        |        |
+\SinCos1/func_or_inet                   |       1|      12|     10.17%
+                                        |        |        |
+--------------------------------------------------------------------------------
 
 
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0
+Timing errors: 118  Score: 371893
 
-Constraints cover  0 paths, 0 nets, and 0 connections (0.0% coverage)
+Constraints cover  377 paths, 118 nets, and 243 connections (88.4% coverage)
 
 
-Peak memory: 61345792 bytes, TRCE: 1183744 bytes, DLYMAN: 0 bytes
+Peak memory: 62595072 bytes, TRCE: 2080768 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

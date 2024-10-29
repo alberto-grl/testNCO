@@ -1,8 +1,17 @@
-@N: MF284 |Setting synthesis effort to medium for the design
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: MF284 |Setting synthesis effort to medium for the design
-@N: MH105 |UMR3 is only supported for HAPS-80.
-@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":630:12:630:15|Removing sequential instance FF_9 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":633:12:633:15|Removing sequential instance FF_8 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":637:12:637:15|Removing sequential instance FF_7 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":641:12:641:15|Removing sequential instance FF_6 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":645:12:645:15|Removing sequential instance FF_5 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":649:12:649:15|Removing sequential instance FF_4 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":653:12:653:15|Removing sequential instance FF_3 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":657:12:657:15|Removing sequential instance FF_2 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":661:12:661:15|Removing sequential instance FF_1 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":665:12:665:15|Removing sequential instance FF_0 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":543:12:543:16|Removing sequential instance FF_21 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\users\alberto\lattice\testnco\sincos.v":477:12:477:16|Removing sequential instance FF_23 (in view: work.SinCos(verilog)) of type view:LUCENT.FD1P3DX(PRIM) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=26 on top level netlist top 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
